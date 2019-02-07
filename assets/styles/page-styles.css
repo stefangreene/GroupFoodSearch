@@ -1,7 +1,158 @@
+
+/*...Stefane style.....*/
+.display-3{
+    font-size: 190px
+    
+}
+#display3{
+    background-image: url("https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg");
+}
+#picture-col{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+#scrollbox{    
+    height:300px;
+    margin: 20px;    
+    overflow:auto; 
+    overflow-x:hidden;
+    width: 100%;  
+}  
+#joke-card{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    height: 300px;
+    width: 250px;
+    float: left;
+    padding: 0 10px 10px 10px;
+}
+.joke-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: grey;
+}
+.image-search{
+    height: auto;
+    max-width: 30%;
+    border: 3px solid black;
+    overflow: auto;
+    border-radius: 5px;
+    margin:10px 0 10px 20px;
+}
+p.title-search{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+#picture-boxes img{
+    max-width: 90%;
+    max-height: 180px   
+}
+
+
+
+
+
+
+/*..... Stefan dropdown menu......*/
+div#header{
+    height: 200px; 
+}
+#banner{
+    margin:20px 0 0 0;
+    background-color: aqua;
+}
+#menu-background{
+    background-color: gray;
+}
+.dropdown{
+    margin:0 0 0 40px;
+    float: left;
+}
+#dropdownMenuButton{
+    text-align: left;
+    width:210px;
+    color: rgb(200, 227, 253);
+    background-color: gray;
+    font-size: 25px;
+    margin: 0 0 0 0;
+}
+.dropdown-menu{
+    border: 1px solid black;
+    font-size: 20px;
+}
+.dropdown-item{
+    font-size: 20px;
+}
+.mutliSelect ul,.mutliSelect1 ul,.mutliSelect2 ul,.mutliSelect3 ul,.mutliSelect4 ul{
+    list-style: none;
+    font-size: 20px;
+}
+.multiSelect input[type="checkbox"]{
+    margin-right: 0 10px 0 0;
+    text-align: left !important;
+}
+.mutliSelect input,.mutliSelect1 input,.mutliSelect2 input,.mutliSelect3 input,.mutliSelect4 input,.dropdown-menu input
+ {
+    margin-right:10px !important;
+ }
+ .dropdown-menu ul{
+
+    padding-left:20px !important
+ }
+
+ .dropdown-menu {
+    min-width: 250px !important;
+ }
+ .multiSel, .multiSel1, .multiSel2, .multiSel3{display:none}
+
+
+
+
+
+
+ /*....Stefan joke style...*/
+ #joke-card{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    height: 300px;
+    width: 250px;
+    float: left;
+    padding: 0 10px 10px 10px;
+}
+.joke-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: grey;
+}
+#trivia-card{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    height: 300px;
+    width: 250px;
+    float: left;
+    padding: 0 10px 10px 10px;
+}
+.trivia-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: grey;
+}
+
+
+
+/*.....May style....*/
 .display-3{
     font-size: 90px;
     text-align: center;
     margin-top: 10px;
+}
+#display3{
+    background-image: url("https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg");
 }
 .image-search{
     height: auto;
@@ -46,10 +197,6 @@ p.title-search{
     font-size: 20px;
     color: grey;
 }
-
-
-
-
 div#header{
     height: 200px; 
 }
@@ -89,7 +236,68 @@ div#header{
 }
 
 
+/*......May slider style...*/
+#picture-col{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 20px;padding:30px;
+  } 
+  div#scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  #yummly {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      margin:5px 10px 5px 10px;
+      text-decoration: none;
+      
+  }
+  #yummly:hover {
+      background-color: #777;
+  }
+
+  .slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  .title-search{
+    text-transform: capitalize;
+  }
 
 
 
 
+  /*....Zewdu code for dropdown...*/
