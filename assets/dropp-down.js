@@ -25,4 +25,49 @@ $(document).ready(function(){
       $('.dropdown dt a').append(ret);
     }
   });
+
+  $('.mutliSelect1 input[type="checkbox"]').on('click', function() {
+    var title = $(this).closest('.mutliSelect1').find('input[type="checkbox"]').val(),
+    title = $(this).val() + ",";
+  if ($(this).is(':checked')) {
+    var html = '<span title="' + title + '">' + title + '</span>';
+        $('.multiSel1').append(html);
+    //$(".hida").hide();
+  } else {
+    $('span[title="' + title + '"]').remove();
+    var ret = $(".hida");
+    $('.dropdown dt a').append(ret);
+  }
+});
+
+
+$('.mutliSelect2 input[type="checkbox"]').on('click', function() {
+  var title = $(this).closest('.mutliSelect2').find('input[type="checkbox"]').val(),
+  title = $(this).val() + ",";
+if ($(this).is(':checked')) {
+  var html = '<span title="' + title + '">' + title + '</span>';
+  $('.multiSel').append(html);
+  //$(".hida").hide();
+} else {
+  $('span[title="' + title + '"]').remove();
+  var ret = $(".hida");
+  $('.dropdown dt a').append(ret);
+}
+});
+
+$('.mutliSelect3 input[type="checkbox"]').on('click', function() {
+  var title = $(this).closest('.mutliSelect3').find('input[type="checkbox"]').val(),
+  title = $(this).val() + ",";
+if ($(this).is(':checked')) {
+  var html = '<span title="' + title + '">' + title + '</span>';
+  $('.multiSel3').append(html);
+  //$(".hida").hide();
+} else {
+  $('span[title="' + title + '"]').remove();
+  var ret = $(".hida");
+  $('.dropdown dt a').append(ret);
+}
+});
+
+
   });
