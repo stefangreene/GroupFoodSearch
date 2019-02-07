@@ -1,2 +1,1 @@
-# GroupFoodSearch
-A GW Bootcamp project
+# Project-

@@ -1,0 +1,20 @@
+#picture-col{
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 20px;
+} 
+div#scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+#yummly {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin:5px 10px 5px 10px;
+    text-decoration: none;
+}
+#yummly:hover {
+    background-color: #777;
+}

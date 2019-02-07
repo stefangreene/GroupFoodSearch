@@ -1,0 +1,38 @@
+div#header{
+    height: 200px; 
+}
+#banner{
+    margin:20px 0 0 0;
+    background-color: aqua;
+}
+#menu-background{
+    background-color: gray;
+}
+.dropdown{
+    margin:0 0 0 40px;
+    float: left;
+}
+#dropdownMenuButton{
+    text-align: left;
+    width:210px;
+    color: rgb(200, 227, 253);
+    background-color: gray;
+    font-size: 25px;
+    margin: 0 0 0 0;
+}
+.dropdown-menu{
+    border: 1px solid black;
+    font-size: 20px;
+}
+.dropdown-item{
+    font-size: 20px;
+}
+.mutliSelect ul{
+    list-style: none;
+    font-size: 20px;
+}
+.multiSelect input[type="checkbox"]{
+    margin-right: 0 10px 0 0;
+    text-align: left !important;
+}
+

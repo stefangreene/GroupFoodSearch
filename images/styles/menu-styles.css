@@ -1,0 +1,36 @@
+div#header{
+    height: 200px; 
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+#menu-background{
+   
+    background-color:  #2d5886; 
+}
+.dropdown{
+    margin:0 0 0 40px;
+    float: left;
+   
+    color: black;
+}
+#dropdownMenuButton{
+    text-align: left;
+    width:175px;
+    color: rgb(200, 227, 253);
+    background-color: gray;
+    font-size: 35px;
+    margin: 0 0 0 0;
+    font-family: 'Bangers', cursive;
+}
+.dropdown-menu{
+    border: 1px solid black;
+    font-size: 20px;
+}
+.dropdown-item{
+    font-size: 20px;
+}
+#menu-background{
+    opacity: inherit;
+    background: aliceblue;
+}
