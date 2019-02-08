@@ -7,6 +7,10 @@ var Allergy = '';
 var Cuisine = '';  
 var appID = 'ad9dde64';
 var apiKey = 'dd23675598c15c270213370a7b95f878';
+var Calories=[];
+var Potassium=[];
+var SaturatedFat=[];
+var NutritionEstimateArray=[0,0,0,0,0,0,0,0,0]
 $( document ).ready(function() {
     $('.IngridentShow').hide();
 
@@ -196,9 +200,7 @@ function yummlyRecipe2(RecipeIdPar){
 
                            
                            var orderedList = $("<ol>");
-                          for(var i=0;i<resultRecipeLength; i++){ 
-                                 
-                              
+                          for(var i=0;i<resultRecipeLength; i++){
                               var orderedListItem = $("<li>");
                                orderedListItem.append(resultRecipe.ingredientLines[i]); 
                                orderedList.append(orderedListItem);
@@ -207,7 +209,39 @@ function yummlyRecipe2(RecipeIdPar){
                         }
                     
                     
-                                       
+                        var nutritionEstimateLength=resultRecipe.nutritionEstimates.length;    
+                        for(var k=0;k<nutritionEstimateLength; k++){
+                            var NutritionEstimate=resultRecipe.nutritionEstimates[k].attribute;
+                        switch(NutritionEstimate) {
+                            case 'FAT_KCAL':
+                             // console.log(resultRecipe.nutritionEstimates[k].value);
+                              NutritionEstimateArray[0]=resultRecipe.nutritionEstimates[k].value;
+                              break;
+                            case "K":
+                           // console.log(resultRecipe.nutritionEstimates[k].value);
+                            NutritionEstimateArray[1]=resultRecipe.nutritionEstimates[k].value;
+                              // code block
+                              break;
+                              case "FASAT":
+                              // code block
+                              NutritionEstimateArray[2]=resultRecipe.nutritionEstimates[k].value;
+                              break;
+                              case 'STARCH':
+                              //console.log(resultRecipe.nutritionEstimates[k].value);
+                              NutritionEstimateArray[3]=resultRecipe.nutritionEstimates[k].value;
+                              break;
+                            case "GLUS":
+                           // console.log(resultRecipe.nutritionEstimates[k].value);
+                            NutritionEstimateArray[4]=resultRecipe.nutritionEstimates[k].value;
+                              // code block
+                              break;
+                              
+                            default:
+                              // code block
+                          }
+               
+
+                         }        drawchart(recipeTitleName);      
                     
                          
                 });
@@ -244,4 +278,77 @@ function yummlyRecipe2(RecipeIdPar){
             }
 
 
+
+ function drawchart(recipeTitleName ){
+    
+// Create the chart
+Highcharts.chart('container', {
+    chart: {
+        type: 'column',
+        width:900,
+        height:300
+    },
+    title: {
+        text: recipeTitleName
+    },    
+    xAxis: {
+        type: 'category'
+    },
+    yAxis: {
+        title: {
+            text: 'Nutrition content'
+        }
+
+    },
+    legend: {
+        enabled: false
+    },
+    plotOptions: {
+        series: {
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                format: '{point.y:.1f}'
+            }
+        }
+    },
+
+    tooltip: {
+        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b> of total<br/>'
+    },
+
+    "series": [
+        {
+            "name": "Nutrition Estimate",
+            "colorByPoint": true,
+            "data": [
+                {
+                    "name": "Fat Cal",
+                    "y": NutritionEstimateArray[0]
+                },
+                {
+                    "name": "K",
+                    "y": NutritionEstimateArray[1]
+                },
+                {
+                    "name": "Saturated Fat",
+                    "y": NutritionEstimateArray[2]
+                },
+                {
+                    "name": "Starch",
+                    "y": NutritionEstimateArray[3]
+                },
+                {
+                    "name": "Glucose",
+                    "y": NutritionEstimateArray[4]
+                }
+                
+            ]
+        }
+    ]
+});
+ }
+=======
         //CHANGE FOR GIT
+
