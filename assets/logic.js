@@ -212,5 +212,31 @@ function yummlyRecipe2(RecipeIdPar){
                          
                 });
     }
+//FIREBASE FUNCTION
+$(document).ready(function () {
+    if ($('#newContact').length > 0) {
+        contactScript('forcontact');
+function contactScript(value) {
+    var a = {
 
- 
+        // Initialize Firebase
+        apiKey: "AIzaSyBN-RamSUys4RiUKy7k4taVK-uu8Db5cSk",
+        authDomain: "groupfoodsearch.firebaseapp.com",
+        databaseURL: "https://groupfoodsearch.firebaseio.com",
+        projectId: "groupfoodsearch",
+        storageBucket: "groupfoodsearch.appspot.com",
+        messagingSenderId: "636824267861"
+    };
+    firebase.initializeApp(config);
+    var b = firebase.database().ref("messages");
+    $("#newContact").submit(function (a) {
+    $(this), console.log("Submit to Firebase");
+        var c = $("#name").val(),
+            d = $("#email").val(),
+            f = { name: c, email: d };
+        return b.push(f).then(function (a) {
+            $(".sucess").css("display", "block"),
+                $(".sucess-none").css("display", "none")
+        }), !1
+    })
+}
