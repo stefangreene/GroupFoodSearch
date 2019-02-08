@@ -213,6 +213,9 @@ function yummlyRecipe2(RecipeIdPar){
                 });
     }
 //FIREBASE FUNCTION
+$(document).ready(function () {
+    if ($('#newContact').length > 0) {
+        contactScript('forcontact');
 function contactScript(value) {
     var a = {
 
