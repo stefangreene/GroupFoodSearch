@@ -234,7 +234,8 @@ function yummlyRecipe2(RecipeIdPar){
                 $(this), console.log("Submit to Firebase");
                     var c = $("#name").val(),
                         d = $("#email").val(),
-                        f = { name: c, email: d };
+                        e = $("#message").val(),
+                        f = { name: c, email: d, message: e };
                     return b.push(f).then(function (a) {
                         $(".sucess").css("display", "block"),
                             $(".sucess-none").css("display", "none")
