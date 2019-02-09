@@ -10,7 +10,7 @@ var apiKey = 'dd23675598c15c270213370a7b95f878';
 var Calories=[];
 var Potassium=[];
 var SaturatedFat=[];
-var NutritionEstimateArray=[0,0,0,0,0,0,0,0,0]
+var NutritionEstimateArray=[0,0,0,0,0,0,0,0,0,0,0]
 $( document ).ready(function() {
     $('.IngridentShow').hide();
 
@@ -235,6 +235,36 @@ function yummlyRecipe2(RecipeIdPar){
                             NutritionEstimateArray[4]=resultRecipe.nutritionEstimates[k].value;
                               // code block
                               break;
+                              case 'FE':
+                             // console.log(resultRecipe.nutritionEstimates[k].value);
+                              NutritionEstimateArray[5]=resultRecipe.nutritionEstimates[k].value;
+                              break;
+                            case "TOCPHA":
+                           // console.log(resultRecipe.nutritionEstimates[k].value);
+                            NutritionEstimateArray[6]=resultRecipe.nutritionEstimates[k].value;
+                              // code block
+                              break;
+                              case "FAMS":
+                              // code block
+                              NutritionEstimateArray[7]=resultRecipe.nutritionEstimates[k].value;
+                              break;
+                              case 'CHOCDF':
+                              //console.log(resultRecipe.nutritionEstimates[k].value);
+                              NutritionEstimateArray[8]=resultRecipe.nutritionEstimates[k].value;
+                              break;
+                              case "VITK":
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
+                            NutritionEstimateArray[9]=resultRecipe.nutritionEstimates[k].value;
+                                 // code block
+                                 break;
+                                 case "CA":
+                                 // code block
+                                 NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
+                                 break;
+                                 case 'MG':
+                                 //console.log(resultRecipe.nutritionEstimates[k].value);
+                                 NutritionEstimateArray[11]=resultRecipe.nutritionEstimates[k].value;
+                                 break;
                               
                             default:
                               // code block
