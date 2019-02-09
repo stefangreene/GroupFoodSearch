@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Crumber</title>
+  <title>TasteBud</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="assets/styles/page-styles.css">
@@ -55,101 +56,220 @@
                     </div>
                     <div class="col-sm-4">
                     <div id="submit-css"> <button type="button" class="btn btn-default" id="recipe-button">
-        <span class="glyphicon glyphicon-search"></span> Search Yummly Recipie</button> <button type="Clear " class="btn btn-primary" id="button-clear">Clear Results</button>          
+        <span class="glyphicon glyphicon-search"></span> Find a Recipie</button> <button type="Clear " class="btn btn-primary" id="button-clear">Clear Results</button>          
                     </div>
                     </div>      
         </div> </div>
-      
-    
 </form> 
 
+
 <div class="row" id="menu-background">
-     <!--dropdownTWO-->
+
+<!--dropdownOne-->
 <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Diet type
+Cuisine
     </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <div class="mutliSelect1">
-        <ul>
-            <li><input class="input-checkbox" type="checkbox" value= "406^Ketogenic" /> Ketogenic</li>
-            <li><input class="input-checkbox" type="checkbox" value= "403^Paleo" /> Paleo</li>
-            <li><input class="input-checkbox" type="checkbox" value= "408^Low FODMAP" /> Low FODMAP</li>
-            <li><input class="input-checkbox" type="checkbox" value= "390^Pescetarian" /> Pescetarian</li>
-            <li><input class="input-checkbox" type="checkbox" value= "387^Lacto-ovo vegetarian" /> Vegetarian</li>
-            <li><input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Ovo vegetarian</li>
-            <li><input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Lacto vegetarian</li>
-            <li> <input class="input-checkbox" type="checkbox" value="386^Vegan" />Vegan</li>
-            </ul>
-        </div>
+        <div class="mutliSelect1">
+                <ul>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-american" /> American</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-kid-friendly" /> Kid-Friendly</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-italian" /> Italian</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-asian" /> Asian</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-mexican" /> Mexican</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-southern" /> Southern & Soul Food</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-french" /> French</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-southwestern" /> Southwestern</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-barbecue-bbq" /> Barbecue</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-indian" /> Indian</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-chinese" /> Chinese</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-cajun" /> Cajun & Creole</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-mediterranean" /> Mediterranean</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-greek" /> Greek</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-english" /> English</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-spanish" /> Spanish</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-thai" /> Thai</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-german" /> German</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-moroccan" /> Moroccan</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-irish" /> Irish</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-japanese" /> Japanese</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-cuban" /> Cuban</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-hawaiian" /> Hawaiian</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-swedish" /> Swedish</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-hungarian" /> Hungarian</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-portuguese" /> Portuguese</li>
+              </ul>
+             </div>
     </div>
 </div>
 
-<!--dropdownTHREE-->
+<!--dropdownTwo-->
 <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Sides
+Sides
         </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <div class="mutliSelect2">
             <ul>
-                <li><input class="input-checkbox" type="checkbox" value= "406^Ketogenic" /> quinoa</li>
-                <li><input class="input-checkbox" type="checkbox" value= "403^Paleo" /> Lentils</li>
-                <li><input class="input-checkbox" type="checkbox" value= "408^Low FODMAP" /> Broccoli</li>
-                <li><input class="input-checkbox" type="checkbox" value= "390^Pescetarian" /> Sweet Potatoes</li>
-                <li><input class="input-checkbox" type="checkbox" value= "406^Ketogenic" /> Potatoes </li>
-                <li><input class="input-checkbox" type="checkbox" value= "403^Paleo" /> Spinach</li>
-                <li><input class="input-checkbox" type="checkbox" value= "408^Low FODMAP" /> Broccoli</li>
-                <li><input class="input-checkbox" type="checkbox" value= "390^Pescetarian" /> Sweet Potatoes</li>
-                <li><input class="input-checkbox" type="checkbox" value= "387^Lacto-ovo vegetarian" /> Rice</li>
-                <li> <input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Cauliflower</li>
-                <li><input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Hummus</li>
-                <li><input class="input-checkbox" type="checkbox" value="386^Vegan" /> Onions</li>
-                <li><input class="input-checkbox" type="checkbox" value="386^Vegan" /> GreenBeans</li>
-                <li><input class="input-checkbox" type="checkbox" value= "387^Lacto-ovo vegetarian" /> brussel Sprouts</li>
-                <li><input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Corn</li>
-                <li> <input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Hummus</li>
-                <li><input class="input-checkbox" type="checkbox" value="386^Vegan" /> Onions</li>
-                <li> <input class="input-checkbox" type="checkbox" value="386^Vegan" /> GreenBeans</li>
+                <li><input class="input-checkbox" type="checkbox" value= "quinoa" /> quinoa</li>
+                <li><input class="input-checkbox" type="checkbox" value= "lentils" /> Lentils</li>
+                <li><input class="input-checkbox" type="checkbox" value= "broccoli" /> Broccoli</li>
+                <li><input class="input-checkbox" type="checkbox" value= "sweet potatoes" /> Sweet Potatoes</li>
+                <li><input class="input-checkbox" type="checkbox" value= "potatoes" /> Potatoes </li>
+                <li><input class="input-checkbox" type="checkbox" value= "spinach" /> Spinach</li>
+                <li><input class="input-checkbox" type="checkbox" value= "rice" /> Rice</li>
+                <li><input class="input-checkbox" type="checkbox" value="cauliflower" /> Cauliflower</li>
+                <li><input class="input-checkbox" type="checkbox" value="hummus" /> Hummus</li>
+                <li><input class="input-checkbox" type="checkbox" value="onions" /> Onions</li>
+                <li><input class="input-checkbox" type="checkbox" value="greenbeans" /> GreenBeans</li>
+                <li><input class="input-checkbox" type="checkbox" value= "brussels sprouts" /> brussel Sprouts</li>
+                <li><input class="input-checkbox" type="checkbox" value="corn" /> Corn</li>
+                <li><input class="input-checkbox" type="checkbox" value="hummus" /> mushrooms</li>
+                <li><form>
+                        <div class="form-row align-items-left ml-0">
+                        <div class="col-sm-8 my-1 mt-3">
+                            <label class="sr-only" for="inlineFormInputGroupUsername">ingredient</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                            </div>
+                        </div>
+                            <div class="col-auto my-1">
+                                <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+                              </div>
+                            </div>
+                          </form></li>
                 </ul>
             </div>
         </div>
     </div>
- 
-    <!--dropdownFIVE-->
+
+
+<!--dropdowThree-->
 <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Allergies
     </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="mutliSelect3">
+        <ul>
+            <li><input class="input-checkbox" type="checkbox" value= "393^Gluten-Free" /> Gluten-Free</li>
+            <li><input class="input-checkbox" type="checkbox" value= "394^Peanut-Free" /> Peanut-Free</li>
+            <li><input class="input-checkbox" type="checkbox" value= "398^Seafood-Free" /> Seafood-Free</li>
+            <li><input class="input-checkbox" type="checkbox" value= "399^Sesame-Free" /> Sesame-Free</li>
+            <li><input class="input-checkbox" type="checkbox" value= "400^Soy-Free" /> Soy-Free</li>
+            <li><input class="input-checkbox" type="checkbox" value="396^Dairy-Free" /> Dairy-Free</li>
+            <li><input class="input-checkbox" type="checkbox" value="397^Egg-Free" /> Egg-Free</li>
+            <li><input class="input-checkbox" type="checkbox" value="401^Sulfite-Free" /> Sulfite-Free</li>
+            <li><input class="input-checkbox" type="checkbox" value="395^Tree Nut-Free" /> Tree Nut-Free</li>
+            <li><input class="input-checkbox" type="checkbox" value="392^Wheat-Free" /> Wheat-Free</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+    <!--dropdownFour-->
+<div class="dropdown">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Course
+    </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <div class="mutliSelect4">
             <ul>
-                <li><input class="input-checkbox" type="checkbox" value= "406^Ketogenic" /> Ketogenic</li>
-                <li> <input class="input-checkbox" type="checkbox" value= "403^Paleo" /> Paleo</li>
-                <li><input class="input-checkbox" type="checkbox" value= "408^Low FODMAP" /> Low FODMAP</li>
-                <li><input class="input-checkbox" type="checkbox" value= "390^Pescetarian" /> Pescetarian</li>
-                <li><input class="input-checkbox" type="checkbox" value= "387^Lacto-ovo vegetarian" /> Vegetarian</li>
-                <li><input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Ovo vegetarian</li>
-                <li><input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Lacto vegetarian</li>
-                <li><input class="input-checkbox" type="checkbox" value="386^Vegan" />Vegan</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Main Dishes" /> Main Dishes</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Appetizers" /> Appetizers</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Side Dishes" /> Side Dishes</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Lunch" /> Lunch</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Salads" /> Salads</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Desserts" /> Desserts</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Breakfast and Brunch" /> Breakfast</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Breakfast and Brunch" /> Brunch</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Breads" /> Breads</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Soups" /> Soups</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Beverages" /> Beverages</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Condiments and Sauces" /> Condiments</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Cocktails" /> Cocktails</li>
+                <li><input class="input-checkbox" type="checkbox" value= "course^course-Snacks" /> Snacks</li>
             </ul>
         </div>
     </div>
 </div>
-            
 
-    <!--dropdownSIX-->
+<!--dropdownFIVE-->
 <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Ingredients
+Without
     </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <div class="dropdown-item" id="slidecontainer">
-                    <p>Default range slider:</p>
-                    <input type="range" min="1" max="50" value="50">
-              </div>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="mutliSelect5">
+        <ul>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=salt" /> No Salt</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=onions" /> No Onions</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=coconut oil" /> No Coconut Oil</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=olive oil" /> No Olive Oil</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=garlic" /> No Garlic</li>
+            <li><input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Ovo vegetarian</li>
+            <li><input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Lacto vegetarian</li>
+            <li><input class="input-checkbox" type="checkbox" value="386^Vegan" />Vegan</li>
+            <li><form>
+                <div class="form-row align-items-center">
+                    
+                        <div class="form-check">
+                            <div class="col-sm-6 my-1 mt-5">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    </div>
+                                    <div class="col-sm-6 my-1 mt-5">
+                                    <div class="input-group align-items-right" id="dropdown-text">
+                                        <div class="input-group-prepend">
+                                            </div>
+                                                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                                            </div></div>
+                                </label>
+                              </div>
+                <div class="col-sm-6 my-1 mt-3">
+                    <label class="sr-only" for="inlineFormInputGroupUsername">ingredient</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                </div>
+            </div>
+        </div>
+                        <!--<div class="col-auto my-1">
+                            <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+                          </div>
+                        </div>-->
+                      </form></li>
+        </ul>
     </div>
 </div>
+</div>   
+
+<!--dropdownSix-->
+<div class="dropdown">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Diet type
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="mutliSelect6">
+    <ul>
+    <li><input class="input-checkbox" type="checkbox" value= "406^Ketogenic" /> Ketogenic</li>
+    <li><input class="input-checkbox" type="checkbox" value= "403^Paleo" /> Paleo</li>
+    <li><input class="input-checkbox" type="checkbox" value= "408^Low FODMAP" /> Low FODMAP</li>
+    <li><input class="input-checkbox" type="checkbox" value= "390^Pescetarian" /> Pescetarian</li>
+    <li><input class="input-checkbox" type="checkbox" value= "387^Lacto-ovo vegetarian" /> Vegetarian</li>
+    <li><input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Ovo vegetarian</li>
+    <li><input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Lacto vegetarian</li>
+    <li> <input class="input-checkbox" type="checkbox" value="386^Vegan" />Vegan</li>
+            </ul>
+        </div>
+    </ul>
+ </div>
+</div>
+</div> 
 
 </div>
 
@@ -242,4 +362,3 @@ Ingredients
   <!-- Firebase JavaScript Link -->
 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 </body>
-</html>

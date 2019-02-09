@@ -1,12 +1,19 @@
-
-/*...Stefane style.....*/
+/*...Stefan style.....*/
+body {
+    background-image: ("src","images/bag_background.gif");
+}
 .display-3{
-    font-size: 190px
-    
+    font-size: 190px;
+    width: 100%;
+    height: auto;
 }
-#display3{
-    background-image: url("https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg");
+div#header{
+    height: 200px; 
 }
+#banner{
+    background-image: url("bag_background.jpg");
+}
+
 #picture-col{
     border: 3px solid black;
     border-radius: 5px;
@@ -57,13 +64,6 @@ p.title-search{
 
 
 /*..... Stefan dropdown menu......*/
-div#header{
-    height: 200px; 
-}
-#banner{
-    margin:20px 0 0 0;
-    background-color: aqua;
-}
 #menu-background{
     background-color: gray;
 }
@@ -86,11 +86,12 @@ div#header{
 .dropdown-item{
     font-size: 20px;
 }
-.mutliSelect ul,.mutliSelect1 ul,.mutliSelect2 ul,.mutliSelect3 ul,.mutliSelect4 ul{
+.mutliSelect1 ul,.mutliSelect2 ul,.mutliSelect3 ul,.mutliSelect4 ul,.mutliSelect5 ul,.mutliSelect6 ul{
     list-style: none;
     font-size: 20px;
 }
 .multiSelect input[type="checkbox"]{
+    size: 20px !important;
     margin-right: 0 10px 0 0;
     text-align: left !important;
 }
@@ -102,11 +103,14 @@ div#header{
 
     padding-left:20px !important
  }
+ #dropdown-text{
+     ;
+ }
 
  .dropdown-menu {
     min-width: 250px !important;
  }
- .multiSel, .multiSel1, .multiSel2, .multiSel3{display:none}
+ .multiSe1, .multiSel2, .multiSel3, .multiSel4, .multiSel5, .multiSel6{display:none}
 
 
 
@@ -200,10 +204,7 @@ p.title-search{
 div#header{
     height: 200px; 
 }
-#banner{
-    margin:20px 0 0 0;
-    background-color: aqua;
-}
+
 #menu-background{
     background-color: gray;
 }
