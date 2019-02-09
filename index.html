@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -261,4 +262,250 @@ Ingredients
   <!-- Firebase JavaScript Link -->
 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crumber</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/styles/page-styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+</head>
+
+<body>
+    
+<!--MASTER CONTAINER -->
+
+<div class="container-fluid" id="banner">
+
+<!--HEADER-->
+<div class="row">
+    <div class="container-fluid" id="header">
+            <h3 class="display-3" id="display3"><img src="https://fontmeme.com/permalink/190204/d185c4d0f9b3059a91e9ee5419ea4738.png"
+                alt="glue-gun-font"></h3>
+    </div>
+</div>
+
+<!--DROPDOWN MENU BUTTONS!!!-->
+<div class="row">
+<h3 class="heading"> </h3>
+<dl class="dropdown"> 
+    <dt>   
+        <p class="multiSel"></p>  
+        <p class="multiSel1"></p>  
+        <p class="multiSel2"></p>  
+        <p class="multiSel3"></p>  
+    
+  </dt> 
+</dl>
+</div>
+
+<!--BUTTON SUBMIT FORM BUTTONS.-->
+
+<form>
+    <div class="form-group">
+            <div class="row">
+                    <div class="col-sm-8">                     
+        <input type="text" class="form-control" id="searchFoodInput" placeholder="search your food hear...">      
+                    </div>
+                    <div class="col-sm-4">
+                    <div id="submit-css"> <button type="button" class="btn btn-default" id="recipe-button">
+        <span class="glyphicon glyphicon-search"></span> Search Yummly Recipie</button> <button type="Clear " class="btn btn-primary" id="button-clear">Clear Results</button>          
+                    </div>
+                    </div>      
+        </div> </div>
+      
+    
+</form> 
+
+<div class="row" id="menu-background">
+     <!--dropdownTWO-->
+<div class="dropdown">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Diet type
+    </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="mutliSelect1">
+        <ul>
+            <li><input class="input-checkbox" type="checkbox" value= "406^Ketogenic" /> Ketogenic</li>
+            <li><input class="input-checkbox" type="checkbox" value= "403^Paleo" /> Paleo</li>
+            <li><input class="input-checkbox" type="checkbox" value= "408^Low FODMAP" /> Low FODMAP</li>
+            <li><input class="input-checkbox" type="checkbox" value= "390^Pescetarian" /> Pescetarian</li>
+            <li><input class="input-checkbox" type="checkbox" value= "387^Lacto-ovo vegetarian" /> Vegetarian</li>
+            <li><input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Ovo vegetarian</li>
+            <li><input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Lacto vegetarian</li>
+            <li> <input class="input-checkbox" type="checkbox" value="386^Vegan" />Vegan</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--dropdownTHREE-->
+<div class="dropdown">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sides
+        </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="mutliSelect2">
+            <ul>
+                <li><input class="input-checkbox" type="checkbox" value= "406^Ketogenic" /> quinoa</li>
+                <li><input class="input-checkbox" type="checkbox" value= "403^Paleo" /> Lentils</li>
+                <li><input class="input-checkbox" type="checkbox" value= "408^Low FODMAP" /> Broccoli</li>
+                <li><input class="input-checkbox" type="checkbox" value= "390^Pescetarian" /> Sweet Potatoes</li>
+                <li><input class="input-checkbox" type="checkbox" value= "406^Ketogenic" /> Potatoes </li>
+                <li><input class="input-checkbox" type="checkbox" value= "403^Paleo" /> Spinach</li>
+                <li><input class="input-checkbox" type="checkbox" value= "408^Low FODMAP" /> Broccoli</li>
+                <li><input class="input-checkbox" type="checkbox" value= "390^Pescetarian" /> Sweet Potatoes</li>
+                <li><input class="input-checkbox" type="checkbox" value= "387^Lacto-ovo vegetarian" /> Rice</li>
+                <li> <input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Cauliflower</li>
+                <li><input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Hummus</li>
+                <li><input class="input-checkbox" type="checkbox" value="386^Vegan" /> Onions</li>
+                <li><input class="input-checkbox" type="checkbox" value="386^Vegan" /> GreenBeans</li>
+                <li><input class="input-checkbox" type="checkbox" value= "387^Lacto-ovo vegetarian" /> brussel Sprouts</li>
+                <li><input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Corn</li>
+                <li> <input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Hummus</li>
+                <li><input class="input-checkbox" type="checkbox" value="386^Vegan" /> Onions</li>
+                <li> <input class="input-checkbox" type="checkbox" value="386^Vegan" /> GreenBeans</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ 
+    <!--dropdownFIVE-->
+<div class="dropdown">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Allergies
+    </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="mutliSelect4">
+            <ul>
+                <li><input class="input-checkbox" type="checkbox" value= "406^Ketogenic" /> Ketogenic</li>
+                <li> <input class="input-checkbox" type="checkbox" value= "403^Paleo" /> Paleo</li>
+                <li><input class="input-checkbox" type="checkbox" value= "408^Low FODMAP" /> Low FODMAP</li>
+                <li><input class="input-checkbox" type="checkbox" value= "390^Pescetarian" /> Pescetarian</li>
+                <li><input class="input-checkbox" type="checkbox" value= "387^Lacto-ovo vegetarian" /> Vegetarian</li>
+                <li><input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Ovo vegetarian</li>
+                <li><input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Lacto vegetarian</li>
+                <li><input class="input-checkbox" type="checkbox" value="386^Vegan" />Vegan</li>
+            </ul>
+        </div>
+    </div>
+</div>
+            
+
+    <!--dropdownSIX-->
+<div class="dropdown">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Ingredients
+    </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-item" id="slidecontainer">
+                    <p>Default range slider:</p>
+                    <input type="range" min="1" max="50" value="50">
+              </div>
+    </div>
+</div>
+
+</div>
+
+<!-- picture boxes and joke boxes.-->
+<div class="row" >
+    <div class="col-sm-9">
+            <div class="row" >
+                <div class="col-sm-12">
+                <div id="picture-col">
+                    <div id="scrollbox">
+                        <div class="card" style="width: 18rem;">                      
+                      </div>
+                    <div id="picture-boxes"> 
+        
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-12 IngridentShow">
+                        <div id="picture-col">
+                            <div id="scrollbox">
+                                <div class="card" style="width: 18rem;">                      
+                              </div>
+                              <div id="RecipeTitle"></div>
+                            <div id="picture-boxes-Recipe"> 
+                
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div id="container" style="min-width: 200px; height: 250px; margin: 0 auto"></div>
+            </div>
+    </div>
+
+<!-- JOKES CARD.-->  
+<div class="col-sm-2">
+    <div class="col-sm-12">
+        <div class="card" id="joke-card">
+        <div class="card-body" id="jokes">
+        <h5 class="card-title" id="joke-header">joke!</br></h5>
+            </div>
+            </div>           
+    </div>
+
+    <!-- JOKES CARD.-->  
+    <div class="col-sm-12">
+        <div class="card" id="trivia-card">
+        <div class="card-body" id="trivia">
+        <h5 class="card-title" id="trivia-header">Trivia!</br></h5>
+            </div>
+            </div>           
+    </div>
+
+</div>
+</div> 
+
+        </div>
+        </div></div>
+        <h3>Contact Us</h3>
+        <form class="sucess-none" id="newContact">
+            <div class="inputs">
+                <input type="text" value="" name="NAME" class="required name" id="name" placeholder="Name:" style=" width: 35%; float: left; background: none; padding: 1.75em 2em; margin: 0; border-radius: .25em; box-shadow: none; border: none;">
+        
+                <input type="email" value="" name="EMAIL" class="required email" id="email" placeholder="Email:" style=" width: 65%; float: left; background: none; padding: 1.75em 2em; margin: 0; border-radius: .25em; box-shadow: none; border: none;">
+                <input type="Message" value="" name="MESSAGE" class="required message" id="message" placeholder="Your Message" style=" width: 65%; float: left; background: none; padding: 1.75em 2em; margin: 0; border-radius: .25em; box-shadow: none; border: none;">
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_96d9e6e519173af7bdbdab9d_23138bd741" tabindex="-1" value="">
+            </div>
+            <input type="submit" class="btn" value="Submit" name="subscribe" id="submitContact">
+        </form>
+        <!--END FORM.-->
+        <!-- FOOTER-->
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">APP NAME.</span>
+            </div>
+        </footer>
+        <!-- JQuery -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src = "assets/logic.js"></script>
+<script type="text/javascript" src = "assets/dropp-down.js"></script>
+
+  <!-- ================================================================================== -->
+
+  <!-- Firebase JavaScript Link -->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+</body>
+>>>>>>> 5928af8952474a7884cf2436714c0475bcc3235d
 </html>
