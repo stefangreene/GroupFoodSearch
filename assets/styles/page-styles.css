@@ -6,6 +6,7 @@
 }
 #display3{
     background-image: url("https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg");
+
 }
 #picture-col{
     border: 3px solid black;
@@ -13,25 +14,38 @@
     margin: 20px 0;
 }
 #scrollbox{    
-    height:300px;
+    height:242px;
     margin: 20px;    
     overflow:auto; 
     overflow-x:hidden;
     width: 100%;  
 }  
+
+
+.joke-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #e7eeed;
+}
+
+
 #joke-card{
     border: 3px solid black;
     border-radius: 5px;
     margin: 20px;
-    height: 300px;
+    min-height: 348px;
     width: 250px;
     float: left;
     padding: 0 10px 10px 10px;
+    background-image: url("../../images/images/4.jpg");
+    background-size: cover;
 }
-.joke-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: grey;
+#jokes{
+    color: #e7eeed;
+    background-color: rgba(0,0,0,0.5)
+}
+#joke-header{
+    text-align: center;
 }
 .image-search{
     height: auto;
@@ -114,25 +128,13 @@ div#header{
 
 
  /*....Stefan joke style...*/
- #joke-card{
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;
-    height: 300px;
-    width: 250px;
-    float: left;
-    padding: 0 10px 10px 10px;
-}
-.joke-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: grey;
-}
+
+
 #trivia-card{
     border: 3px solid black;
     border-radius: 5px;
     margin: 20px;
-    height: 300px;
+    min-height: 348px;
     width: 250px;
     float: left;
     padding: 0 10px 10px 10px;
@@ -140,9 +142,15 @@ div#header{
 .trivia-text{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: grey;
+    color: #e7eeed;
 }
-
+#trivia{
+    background-color: rgba(0,0,0,0.5);
+}
+#trivia-header{
+    color: #e7eeed;
+    text-align: center;
+}
 
 
 /*.....May style....*/
@@ -169,34 +177,20 @@ p.title-search{
 
 
 
-#joke-card{
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;
-    height: 300px;
-    width: 250px;
-    float: left;
-    padding: 0 10px 10px 10px;
-}
-.joke-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: grey;
-}
 #trivia-card{
     border: 3px solid black;
     border-radius: 5px;
     margin: 20px;
-    height: 300px;
+    min-height: 300px;
     width: 250px;
     float: left;
     padding: 0 10px 10px 10px;
+    background-image: url("../../images/images/3.jpg");
+    background-size: cover;
+    
 }
-.trivia-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: grey;
-}
+
+
 div#header{
     height: 200px; 
 }
@@ -242,6 +236,7 @@ div#header{
     border: 3px solid black;
     border-radius: 5px;
     margin: 20px;padding:30px;
+    min-height: 326px;
   } 
   div#scrollmenu {
     overflow: auto;
