@@ -12,7 +12,7 @@ var Potassium=[];
 var SaturatedFat=[];
 var NutritionEstimateArray=[0,0,0,0,0,0,0,0,0,0,0]
 $( document ).ready(function() {
-    $('.IngridentShow').hide();
+    //$('.IngredientShow').hide();
 
 });
 $('#recipe-button').on('click', function(){
@@ -92,19 +92,19 @@ $.ajax({
         $("#picture-boxes").empty();
     }
        var ResultsLength=results.matches.length; console.log(ResultsLength);
-      for(var j=0;j<ResultsLength; j++){    
-            console.log(results.matches[j].imageUrlsBySize);
-               var returnTitle = results.matches[j].recipeName;
-                    // console.log(returnTitle);                
-                    var picImage = results.matches[j].smallImageUrls;
-                    var RecipeIdPar=results.matches[j].id;
-                    var anchorTagImage = $("<div>");
-                    var textAnchorTag = $("<div>");
-            //create div for single reutrn item.
-                    var searchResults = $("<div>");
-            //create <p> tag for returnTitles.
-                    var p = $("<p>")
-                    p.addClass("title-search");
+      for(var j=0;j<ResultsLength; j++){ 
+        console.log(results.matches[j].imageUrlsBySize);
+                var returnTitle = results.matches[j].recipeName;
+                // console.log(returnTitle);                
+                var picImage = results.matches[j].smallImageUrls;
+                var RecipeIdPar=results.matches[j].id;
+                var anchorTagImage = $("<div>");
+                var textAnchorTag = $("<div>");
+                //create div for single reutrn item.
+                var searchResults = $("<div>");
+                //create <p> tag for returnTitles.
+                var p = $("<p>")   
+                p.addClass("title-search");
                     if (returnTitle.length > 30) {
                         returnTitle = returnTitle.substring(0, 29)+"...";
                     }
@@ -192,15 +192,14 @@ function yummlyRecipe2(RecipeIdPar){
                         $("#picture-boxes-Recipe").html('');
                         $("#RecipeTitle").html('');
                            var resultRecipeLength=resultRecipe.ingredientLines.length; 
-                           console.log(resultRecipeLength);
+                           //console.log(resultRecipeLength);
                            var recipeTitleP=$("<h1>");
                            var recipeTitleName=resultRecipe.name;
                                recipeTitleP.append(recipeTitleName); 
                                recipeTitleP.append(recipeTitleP);
                                $("#RecipeTitle").append(recipeTitleP);
-                               $("#RecipeTitle").append('<h1> Ingredients</h1>')
+                               $("#RecipeTitle").append('<h1> Ingredients</h1>');
 
-                           
                            var orderedList = $("<ol>");
                           for(var i=0;i<resultRecipeLength; i++){
                               var orderedListItem = $("<li>");
@@ -208,7 +207,36 @@ function yummlyRecipe2(RecipeIdPar){
                                orderedList.append(orderedListItem);
                                $("#picture-boxes-Recipe").append(orderedList);
                                  
-                        }
+                          }       
+                        /*/.....stefans attempt to add site references......
+                        var recipeSiteSource = results.matches.sourceSiteUrl;
+                        for(var s=0; s<)
+                        console.log(recipeSiteSource);
+                        var recipeSite = $("<h4>");
+                        recipeSite.addClass("source-site");  
+                        var recipeSiteSource = results.matches.sourceSiteUrl;
+                        recipeSite.append(recipeSiteSource);
+                        recipeSite.append(recipeSite);
+                        $("#source-site").append(recipeSite);
+                        $("#source-site").append('<h4> Site </h4>');
+                           var returnTitle = resultsRecipe.recipeName.length;
+
+                           console.log(results.matches[j].hostedMediumUrl);
+                           var recipeSource = results.matches[j].sourceDisplayName;
+                           var recipeSourceUrl = results.matches[j].sourceRecipeUrl;
+                           var recipeSiteUrl = results.matches[j].sourceSiteUrl;
+                                console.log(recipeSource);
+                                console.log(recipeSourceUrl);  
+                                console.log(recipeSiteUrl);             
+                                var picImage = results.matches[j].hostedMediumUrl;
+                                var RecipeIdPar=results.matches[j].id;
+                                var anchorTagImage = $("<div>");
+                                var textAnchorTag = $("<div>");
+                        //create div for single reutrn item.
+                                var searchResults = $("<div>");
+                        //create <p> tag for returnTitles.
+                                var p = $("<p>")*/
+                       
                     
                     
                         var nutritionEstimateLength=resultRecipe.nutritionEstimates.length;    
@@ -258,8 +286,8 @@ function yummlyRecipe2(RecipeIdPar){
                               // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[9]=resultRecipe.nutritionEstimates[k].value;
                                 // code block
-                                break;
-                                case "CA":
+                               break;
+                               case "CA":
                                  // code block
                                 NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
                                  break;
