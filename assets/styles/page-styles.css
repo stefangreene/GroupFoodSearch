@@ -405,4 +405,17 @@ p.title-search{
     font-size: 26px;
     color: white;
     z-index: 2;
+
+    color:rgb(255, 119, 0);
+    z-index: 1;
+    margin-top: 120%;
+}
+/*.......Form......*/
+#newContact{
+    font-family: 'Staatliches', cursive;
+    z-index: 1;
+    position: absolute;
+    margin-top: 100%;
+    width: 100%;
+
 }
