@@ -175,7 +175,7 @@ div#search-bar{
     overflow:auto; 
     overflow-x:hidden;
     width: 100%; 
-    border: 6px solid rgb(210, 44, 44); 
+    border: 4px solid rgb(210, 44, 44); 
 }  
 div#scrollmenu {
     overflow: auto;
