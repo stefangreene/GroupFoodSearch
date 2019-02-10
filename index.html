@@ -24,10 +24,13 @@
 
 <div class="container-fluid" id="banner">
 
+<!--MASTER CONTAINER -->
+
+     <div class="container-fluid"><img class="background-image" src="images/background_image.jpg"></div>
 <!--HEADER-->
 <div class="row">
     <div class="container-fluid" id="header">
-            <h3 id="appname" class="display-3"> TasteBud.</h3>
+            <h3 id="appname" class="display-3"> TasteBud</h3>
     </div>
 </div>
 
@@ -36,10 +39,12 @@
 <h3 class="heading"> </h3>
 <dl class="dropdown"> 
     <dt>   
-        <p class="multiSel"></p>  
         <p class="multiSel1"></p>  
         <p class="multiSel2"></p>  
         <p class="multiSel3"></p>  
+        <p class="multiSel4"></p>
+        <p class="multiSel5"></p>  
+        <p class="multiSel6"></p>  
     
   </dt> 
 </dl>
@@ -48,24 +53,28 @@
 <!--BUTTON SUBMIT FORM BUTTONS.-->
 
 <form>
-    <div class="form-group">
-            <div class="row">
-                    <div class="col-sm-8">                     
-        <input type="text" class="form-control" id="searchFoodInput" placeholder="search your food hear...">      
-                    </div>
-                    <div class="col-sm-4">
-                    <div id="submit-css"> <button type="button" class="btn btn-default" id="recipe-button">
-        <span class="glyphicon glyphicon-search"></span> Find a Recipie</button> <button type="Clear " class="btn btn-primary" id="button-clear">Clear Results</button>          
-                    </div>
-                    </div>      
-        </div> </div>
+<div class="form-group">
+    <div class="row" id="search-bar">
+            <div class="col-sm-7 ml-3">                     
+                <input type="text" class="form-control" id="searchFoodInput" placeholder="search TasteBud here...">      
+            </div>
+                <div class="col-sm-5">
+                    <div id="submit-css"> 
+            <button type="button" class="btn btn-default" id="recipe-button">
+                    <span class="glyphicon glyphicon-search"></span> Find a Recipie</button> 
+            <button type="Clear " class="btn btn-primary" id="button-clear">Clear Results</button>
+           <button onclick="location.href='https://developer.yummly.com/'" class="btn btn-primary" id="yummly-tag" type="button">Powered by:<img src='https://static.yummly.co/api-logo.png'></button>
+            </div>
+        </div>      
+    </div> 
+</div>
 </form> 
-
 
 <div class="row" id="menu-background">
 
 <!--dropdownOne-->
-<div class="dropdown">
+    <div class="col-lg-2">
+    <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Cuisine
     </button>
@@ -77,7 +86,7 @@ Cuisine
                 <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-italian" /> Italian</li>
                 <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-asian" /> Asian</li>
                 <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-mexican" /> Mexican</li>
-                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-southern" /> Southern & Soul Food</li>
+                <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-southern" /> Soul Food</li>
                 <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-french" /> French</li>
                 <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-southwestern" /> Southwestern</li>
                 <li><input class="input-checkbox" type="checkbox" value= "cuisine^cuisine-barbecue-bbq" /> Barbecue</li>
@@ -101,10 +110,12 @@ Cuisine
               </ul>
              </div>
     </div>
+    </div>
 </div>
 
 <!--dropdownTwo-->
-<div class="dropdown">
+    <div class="col-lg-2">
+    <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Sides
         </button>
@@ -125,29 +136,15 @@ Sides
                 <li><input class="input-checkbox" type="checkbox" value= "brussels sprouts" /> brussel Sprouts</li>
                 <li><input class="input-checkbox" type="checkbox" value="corn" /> Corn</li>
                 <li><input class="input-checkbox" type="checkbox" value="hummus" /> mushrooms</li>
-                <li><form>
-                        <div class="form-row align-items-left ml-0">
-                        <div class="col-sm-8 my-1 mt-3">
-                            <label class="sr-only" for="inlineFormInputGroupUsername">ingredient</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                </div>
-                                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-                            </div>
-                        </div>
-                            <div class="col-auto my-1">
-                                <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
-                              </div>
-                            </div>
-                          </form></li>
                 </ul>
             </div>
         </div>
     </div>
-
+</div>
 
 <!--dropdowThree-->
-<div class="dropdown">
+    <div class="col-lg-2">
+    <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Allergies
     </button>
@@ -167,10 +164,12 @@ Allergies
         </ul>
     </div>
 </div>
+    </div>
 </div>
 
     <!--dropdownFour-->
-<div class="dropdown">
+    <div class="col-lg-2">
+    <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Course
     </button>
@@ -194,61 +193,35 @@ Course
             </ul>
         </div>
     </div>
+    </div>
 </div>
 
 <!--dropdownFIVE-->
-<div class="dropdown">
+    <div class="col-lg-2">
+    <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Without
     </button>
      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <div class="mutliSelect5">
         <ul>
-            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=salt" /> No Salt</li>
-            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=onions" /> No Onions</li>
-            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=coconut oil" /> No Coconut Oil</li>
-            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=olive oil" /> No Olive Oil</li>
-            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=garlic" /> No Garlic</li>
-            <li><input class="input-checkbox" type="checkbox" value="389^Ovo vegetarian" /> Ovo vegetarian</li>
-            <li><input class="input-checkbox" type="checkbox" value="388^Lacto vegetarian" /> Lacto vegetarian</li>
-            <li><input class="input-checkbox" type="checkbox" value="386^Vegan" />Vegan</li>
-            <li><form>
-                <div class="form-row align-items-center">
-                    
-                        <div class="form-check">
-                            <div class="col-sm-6 my-1 mt-5">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1">
-                                    </div>
-                                    <div class="col-sm-6 my-1 mt-5">
-                                    <div class="input-group align-items-right" id="dropdown-text">
-                                        <div class="input-group-prepend">
-                                            </div>
-                                                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-                                            </div></div>
-                                </label>
-                              </div>
-                <div class="col-sm-6 my-1 mt-3">
-                    <label class="sr-only" for="inlineFormInputGroupUsername">ingredient</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-                </div>
-            </div>
-        </div>
-                        <!--<div class="col-auto my-1">
-                            <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
-                          </div>
-                        </div>-->
-                      </form></li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=salt" /> Salt</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=onions" /> Onion</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=coconut oil" /> Coconut Oil</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=olive oil" /> Olive Oil</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=garlic" /> Garlic</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=mushroom" /> Mushroom</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=citrus" /> Citrus</li>
+            <li><input class="input-checkbox" type="checkbox" value= "&excludedIngredient[]=sugar" /> Sugar</li>
         </ul>
     </div>
 </div>
-</div>   
+    </div>
+</div>
 
 <!--dropdownSix-->
-<div class="dropdown">
+    <div class="col-lg-2">
+    <div class="dropdown">
     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Diet type
     </button>
@@ -267,12 +240,12 @@ Diet type
         </div>
     </ul>
  </div>
+    </div>
 </div>
+
 </div> 
 
-</div>
-
-<!-- picture boxes and joke boxes.-->
+<!-- Scrollbox.-->
 <div class="row" >
     <div class="col-sm-9">
             <div class="row" >
@@ -286,7 +259,7 @@ Diet type
                     </div>
                     </div>
                 </div>
-                </div>
+            </div>
                 <div class="col-sm-12 IngridentShow">
                         <div id="picture-col">
                             <div id="scrollbox">
@@ -294,40 +267,43 @@ Diet type
                               </div>
                               <div id="RecipeTitle"></div>
                             <div id="picture-boxes-Recipe"> 
-                
                             </div>
                             </div>
                         </div>
-                        </div>
+                </div>
 
-                        <div id="container" style="min-width: 200px; height: 250px; margin: 0 auto"></div>
+                <div id="container" style="min-width: 200px; height: 250px; margin: 0 auto"></div>
             </div>
     </div>
+</div>
+
 
 <!-- JOKES CARD.-->  
 <div class="col-sm-2">
     <div class="col-sm-12">
         <div class="card" id="joke-card">
         <div class="card-body" id="jokes">
-        <h5 class="card-title" id="joke-header">joke!</br></h5>
+        <h3 class="card-title" id="joke-header">Food Joke!</h3>
+        <h4 class="joke-text"></h4>
             </div>
-            </div>           
+        </div>           
     </div>
+</div>
 
-    <!-- JOKES CARD.-->  
+    <!-- trivia CARD.-->  
     <div class="col-sm-12">
         <div class="card" id="trivia-card">
         <div class="card-body" id="trivia">
-        <h5 class="card-title" id="trivia-header">Trivia!</br></h5>
+        <h3 class="card-title" id="trivia-header">Trivia!</br></h3>
+        <h4 class="trivia-text"></h4>
             </div>
             </div>           
     </div>
 
-</div>
-</div> 
 
-        </div>
-        </div></div>
+<!--........end Main container........-->
+</div>
+
         <h3>Contact Us</h3>
         <form class="sucess-none" id="newContact">
             <div class="inputs">
@@ -349,7 +325,7 @@ Diet type
             </div>
         </footer>
         <!-- JQuery -->
-
+    </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
