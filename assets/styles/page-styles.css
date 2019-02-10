@@ -323,5 +323,19 @@ p.title-search{
     text-align: center;
     font-family: 'Staatliches', cursive;
     font-size: 26px;
-    color: white;
+    color:rgb(255, 119, 0);
+    z-index: 1;
+    margin-top: 120%;
+}
+/*.......Form......*/
+#newContact{
+    font-family: 'Staatliches', cursive;
+    z-index: 1;
+    position: absolute;
+    margin-top: 100%;
+    width: 100%;
+
+
+
+
 }
