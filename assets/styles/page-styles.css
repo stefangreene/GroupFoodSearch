@@ -1,50 +1,276 @@
-/*.. Header..*/
-#appname{
-    font-family: 'Staatliches', cursive;
-    font-size: 260px;
-    color: white;
-    margin-bottom: 400px;
+/*background image*/
+.background-image{
+    width:100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
 }
-/*...Search Bar...*/
-.searchFoodInput{
 
-  font-family: 'Staatliches', cursive;
-    font-size: 260px;
-    color: white;
-   
+/*......Header style.....*/
+div#header{
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 }
-/*...JUNK DRAWER...*/
- 
-/*...Stefane style.....*/
 .display-3{
-    font-size: 190px
+    margin-top: 20%;
+    font-family: 'Staatliches', cursive;
+    font-size: 280px;
+    text-shadow: 3px 3px 5px rgb(156, 116, 67); 
+    color: white;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+#banner{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
+}
+
+
+/*...Search Bar...*/
+div#search-bar{
+    position: absolute;
+    width: 80%;
+    z-index: 1;
+    margin-top: 33%;
+    margin-left: 10%;
+}
+#searchFoodInput{
+    font-family: 'Staatliches', cursive;
+    box-shadow: 2px 2px 3px rgb(156, 116, 67);
+    font-size: 22px;
+    border: 1px solid rgb(255, 119, 0);
+    height:50px;
+    margin-right: 10px;
+    width: 745px;
+}
+#recipe-button{
+    color: rgb(62, 62, 62);
+    background-color: rgb(69, 245, 41);
+    border: 1px solid rgb(69, 245, 41);
+    box-shadow: 2px 2px 3px rgb(156, 116, 67);
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    margin-left: 0;
+    height:50px;
+}
+#button-clear{
+    background-color: rgb(255, 119, 0);
+    border: 1px solid rgb(255, 119, 0);
+    font-family: 'Staatliches', cursive;
+    box-shadow: 2px 2px 3px rgb(156, 116, 67);
+    margin-left: 5px;
+    font-size: 20px;
+    height:50px;
+}
+#yummly-tag{
+    width: 200px;
+    margin-left: 5px;
+    padding-left: 18px; 
+    font-family: 'Staatliches', cursive;
+    box-shadow: 2px 2px 3px rgb(156, 116, 67);
+    font-size: 20px;
+    color: rgb(62, 62, 62);
+    background-color: white;
+    height:50px;
+}
+
+
+
+/*....Code for dropdown...*/
+#menu-background{
+    background-color: rgb(118, 88, 51);
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 37%;
+    margin-left:9%; 
+    position: absolute;
+    z-index: 1;
+}
+.dropdown{
+    width: 100%;
+    float: left;
+    position: absolute;
+    z-index: 1;
+}
+#dropdownMenuButton{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    width:175px;
+    color: rgb(255, 119, 0);
+    background-color: rgb(118, 88, 51);
+    font-size: 28px;
+}
+.dropdown-menu {
+    min-width: 120% !important;
+    border: 1px solid black;
+    font-size: 20px;
+    border:1px solid black !important;
+ }
+.dropdown-menu ul{
+    padding-left:20px !important;
+    
+ }
+.dropdown-item{
+    font-size: 20px;
+}
+.multiSelect input[type="checkbox"]{
+    size: 20px !important;
+    margin: 0 10px 0 0;
+    text-align: left !important;
     
 }
-#display3{
-    background-image: url("https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg");
 
+.mutliSelect1 ul,
+.mutliSelect2 ul,
+.mutliSelect3 ul,
+.mutliSelect4 ul,
+.mutliSelect5 ul,
+.mutliSelect6 ul{
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.mutliSelect input,
+.mutliSelect1 input,
+.mutliSelect2 input,
+.mutliSelect3 input,
+.mutliSelect4 input,
+.dropdown-menu input{margin-right:10px !important;}
+
+ .multiSe1,
+ .multiSel2,
+ .multiSel3,
+ .multiSel4,
+ .multiSel5,
+ .multiSel6{display:none}
+
+
+
+
+
+
+/*....Recipe result box....*/
+/*......image scrollbox......*/
 #picture-col{
-    border: 3px solid black;
+    background-color: white;
+    width: 95%; 
     border-radius: 5px;
     margin: 20px 0;
-}
+    min-height: 290px !important;
+    border: 2px solid black;
+    box-shadow: 4px 4px 6px rgb(156, 116, 67);
+    position: relative;
+    margin-top: 56%;
+    margin-left:20%;
+    z-index: 1;
+} 
 #scrollbox{    
-    height:242px;
-    margin: 20px;    
+    height:286px;    
     overflow:auto; 
     overflow-x:hidden;
-    width: 100%;  
+    width: 100%; 
+    border: 6px solid rgb(210, 44, 44); 
 }  
+div#scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+#yummly {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      margin:5px 10px 5px 10px;
+      text-decoration: none;    
+}
+#yummly:hover {
+      background-color: #777;
+}
+.slidecontainer {
+    width: 100%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #ae2121;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 3s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+    cursor: pointer !important;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
 
 
+
+/*.....yummly search cards scrollbox.....*/
+
+#picture-boxes img{
+    max-width: 95%;
+    max-height: 150px;
+    margin: 10px 5px 0 5px;
+    border: 0.5px solid black;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 2px 2px 4px rgb(208, 208, 208);
+}
+.image-search{
+    height: auto;
+    max-width: 40%;
+    border: 3px solid black;
+    overflow: auto;
+    margin:10px 0 10px 20px;
+}
+p.title-search{
+    width: 95%;
+    height: 45px;
+    padding: 3px 0 0 5px;
+    border: 0.5px solid black;
+    margin: 0 5px 10px 5px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 4px rgb(208, 208, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+
+/*.......trivia and Joke styles........*/
+
+#jokes{
+    color: #e7eeed;
+    background-color: rgba(0,0,0,0.5)
+}
+#joke-header{
+    color: #e7eeed;
+    text-align: center;
+    font-family: Bradley Hand, cursive;
+    font-weight: bold;
+    
+}
 .joke-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     color: #e7eeed;
 }
-
-
 #joke-card{
     border: 3px solid black;
     border-radius: 5px;
@@ -53,108 +279,9 @@
     width: 250px;
     float: left;
     padding: 0 10px 10px 10px;
-    background-image: url("../../images/images/4.jpg");
+    background-image: url("../../images/4.jpg");
     background-size: cover;
     border-radius: 28px;
-}
-#jokes{
-    color: #e7eeed;
-    background-color: rgba(0,0,0,0.5)
-}
-#joke-header{
-    text-align: center;
-}
-.image-search{
-    height: auto;
-    max-width: 30%;
-    border: 3px solid black;
-    overflow: auto;
-    border-radius: 5px;
-    margin:10px 0 10px 20px;
-}
-p.title-search{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-
-}
-#picture-boxes img{
-    max-width: 90%;
-    max-height: 180px   
-}
-
-/*..... Stefan dropdown menu......*/
-div#header{
-    height: 200px; 
-}
-#banner{
-    margin:20px 0 0 0;
-    background-color: aqua;
-}
-#menu-background{
-    background-color: gray;
-}
-.dropdown{
-    margin:0 0 0 40px;
-    float: left;
-}
-#dropdownMenuButton{
-    text-align: left;
-    width:210px;
-    color: rgb(200, 227, 253);
-    background-color: gray;
-    font-size: 25px;
-    margin: 0 0 0 0;
-}
-.dropdown-menu{
-    border: 1px solid black;
-    font-size: 20px;
-}
-.dropdown-item{
-    font-size: 20px;
-}
-.mutliSelect ul,.mutliSelect1 ul,.mutliSelect2 ul,.mutliSelect3 ul,.mutliSelect4 ul{
-    list-style: none;
-    font-size: 20px;
-}
-.multiSelect input[type="checkbox"]{
-    margin-right: 0 10px 0 0;
-    text-align: left !important;
-}
-.mutliSelect input,.mutliSelect1 input,.mutliSelect2 input,.mutliSelect3 input,.mutliSelect4 input,.dropdown-menu input
- {
-    margin-right:10px !important;
- }
- .dropdown-menu ul{
-
-    padding-left:20px !important
- }
-
- .dropdown-menu {
-    min-width: 250px !important;
- }
- .multiSel, .multiSel1, .multiSel2, .multiSel3{display:none}
-
-
-
-
-
-
- /*....Stefan joke style...*/
-
-
-#trivia-card{
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;
-    min-height: 348px;
-    width: 250px;
-    float: left;
-    padding: 0 10px 10px 10px;
-}
-.trivia-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: #e7eeed;
 }
 #trivia{
     background-color: rgba(0,0,0,0.5);
@@ -162,32 +289,13 @@ div#header{
 #trivia-header{
     color: #e7eeed;
     text-align: center;
+    font-family: Bradley Hand, cursive;
+    font-weight: bold;
 }
-
-
-/*.....May style....*/
-.display-3{
-    font-size: 90px;
-    text-align: center;
-    margin-top: 10px;
+.trivia-text{
+    font-size: 20px;
+    color: #e7eeed;
 }
-#display3{
-    background-image: url("https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg");
-}
-.image-search{
-    height: auto;
-    max-width: 30%;
-    border: 3px solid black;
-    overflow: auto;
-    border-radius: 5px;
-    margin:10px 0 10px 20px;
-}
-p.title-search{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-
 
 #trivia-card{
     border: 3px solid black;
@@ -197,115 +305,16 @@ p.title-search{
     width: 250px;
     float: left;
     padding: 0 10px 10px 10px;
-    background-image: url("../../images/images/3.jpg");
+    background-image: url("../../images/3.jpg");
     background-size: cover;
     border-radius: 28px;
     border-radius: 28px;
-    
 }
 
 
-div#header{
-    height: 200px; 
-}
-#banner{
-    margin:20px 0 0 0;
-    background-color: aqua;
-}
-#menu-background{
-    background-color: gray;
-}
-.dropdown{
-    margin:0 0 0 40px;
-    float: left;
-}
-#dropdownMenuButton{
-    text-align: left;
-    width:210px;
-    color: rgb(200, 227, 253);
-    background-color: gray;
-    font-size: 25px;
-    margin: 0 0 0 0;
-}
-.dropdown-menu{
-    border: 1px solid black;
-    font-size: 20px;
-}
-.dropdown-item{
-    font-size: 20px;
-}
-.mutliSelect ul{
-    list-style: none;
-    font-size: 20px;
-}
-.multiSelect input[type="checkbox"]{
-    margin-right: 0 10px 0 0;
-    text-align: left !important;
-}
+/*.......Footer.......*/
 
-
-/*......May slider style...*/
-#picture-col{
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;padding:30px;
-    min-height: 326px;
-  } 
-  div#scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
-  }
-  #yummly {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      margin:5px 10px 5px 10px;
-      text-decoration: none;
-      
-  }
-  #yummly:hover {
-      background-color: #777;
-  }
-
-  .slidecontainer {
-    width: 100%;
-  }
-  
-  .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 25px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  .slider:hover {
-    opacity: 1;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: #4CAF50;
-    cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #4CAF50;
-    cursor: pointer;
-  }
-  .title-search{
-    text-transform: capitalize;
-  }
-  .footer {
+.footer {
     position: absolute;
     width: 100%;
     height: 60px;
@@ -316,333 +325,3 @@ div#header{
     font-size: 26px;
     color: white;
 }
-
-
-
-
-
-  /*....Zewdu code for dropdown...*/
-  #container{
-
-    margin-left: 200px !important;
-    padding-bottom: 400px;
-    height:50%;
-=======
-/*...Stefan style.....*/
-body {
-    background-image: ("src","images/bag_background.gif");
-}
-.display-3{
-    font-size: 190px;
-    width: 100%;
-    height: auto;
-}
-div#header{
-    height: 200px; 
-}
-#banner{
-    background-image: url("bag_background.jpg");
-}
-
-#picture-col{
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px 0;
-}
-#scrollbox{    
-    height:300px;
-    margin: 20px;    
-    overflow:auto; 
-    overflow-x:hidden;
-    width: 100%;  
-}  
-#joke-card{
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;
-    height: 300px;
-    width: 250px;
-    float: left;
-    padding: 0 10px 10px 10px;
-}
-.joke-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: grey;
-}
-.image-search{
-    height: auto;
-    max-width: 30%;
-    border: 3px solid black;
-    overflow: auto;
-    border-radius: 5px;
-    margin:10px 0 10px 20px;
-}
-p.title-search{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-
-}
-#picture-boxes img{
-    max-width: 90%;
-    max-height: 180px   
-}
-
-
-
-
-
-
-/*..... Stefan dropdown menu......*/
-#menu-background{
-    background-color: gray;
-}
-.dropdown{
-    margin:0 0 0 40px;
-    float: left;
-}
-#dropdownMenuButton{
-    text-align: left;
-    width:210px;
-    color: rgb(200, 227, 253);
-    background-color: gray;
-    font-size: 25px;
-    margin: 0 0 0 0;
-}
-.dropdown-menu{
-    border: 1px solid black;
-    font-size: 20px;
-}
-.dropdown-item{
-    font-size: 20px;
-}
-.mutliSelect1 ul,.mutliSelect2 ul,.mutliSelect3 ul,.mutliSelect4 ul,.mutliSelect5 ul,.mutliSelect6 ul{
-    list-style: none;
-    font-size: 20px;
-}
-.multiSelect input[type="checkbox"]{
-    size: 20px !important;
-    margin-right: 0 10px 0 0;
-    text-align: left !important;
-}
-.mutliSelect input,.mutliSelect1 input,.mutliSelect2 input,.mutliSelect3 input,.mutliSelect4 input,.dropdown-menu input
- {
-    margin-right:10px !important;
- }
- .dropdown-menu ul{
-
-    padding-left:20px !important
- }
- #dropdown-text{
-     ;
- }
-
- .dropdown-menu {
-    min-width: 250px !important;
- }
- .multiSe1, .multiSel2, .multiSel3, .multiSel4, .multiSel5, .multiSel6{display:none}
-
-
-
-
-
-
- /*....Stefan joke style...*/
- #joke-card{
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;
-    height: 300px;
-    width: 250px;
-    float: left;
-    padding: 0 10px 10px 10px;
-}
-.joke-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: grey;
-}
-#trivia-card{
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;
-    height: 300px;
-    width: 250px;
-    float: left;
-    padding: 0 10px 10px 10px;
-}
-.trivia-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: grey;
-}
-
-
-
-/*.....May style....*/
-.display-3{
-    font-size: 90px;
-    text-align: center;
-    margin-top: 10px;
-}
-#display3{
-    background-image: url("https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg");
-}
-.image-search{
-    height: auto;
-    max-width: 30%;
-    border: 3px solid black;
-    overflow: auto;
-    border-radius: 5px;
-    margin:10px 0 10px 20px;
-}
-p.title-search{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-
-
-#joke-card{
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;
-    height: 300px;
-    width: 250px;
-    float: left;
-    padding: 0 10px 10px 10px;
-}
-.joke-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: grey;
-}
-#trivia-card{
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;
-    height: 300px;
-    width: 250px;
-    float: left;
-    padding: 0 10px 10px 10px;
-}
-.trivia-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: grey;
-}
-div#header{
-    height: 200px; 
-}
-
-#menu-background{
-    background-color: gray;
-}
-.dropdown{
-    margin:0 0 0 40px;
-    float: left;
-}
-#dropdownMenuButton{
-    text-align: left;
-    width:210px;
-    color: rgb(200, 227, 253);
-    background-color: gray;
-    font-size: 25px;
-    margin: 0 0 0 0;
-}
-.dropdown-menu{
-    border: 1px solid black;
-    font-size: 20px;
-}
-.dropdown-item{
-    font-size: 20px;
-}
-.mutliSelect ul{
-    list-style: none;
-    font-size: 20px;
-}
-.multiSelect input[type="checkbox"]{
-    margin-right: 0 10px 0 0;
-    text-align: left !important;
-}
-
-
-/*......May slider style...*/
-#picture-col{
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 5px;
-    margin: 20px;padding:30px;
-  } 
-  div#scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
-  }
-  #yummly {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      margin:5px 10px 5px 10px;
-      text-decoration: none;
-      
-  }
-  #yummly:hover {
-      background-color: #777;
-  }
-
-  .slidecontainer {
-    width: 100%;
-  }
-  
-  .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 25px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  .slider:hover {
-    opacity: 1;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: #4CAF50;
-    cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #4CAF50;
-    cursor: pointer;
-  }
-  .title-search{
-    text-transform: capitalize;
-  }
-  .footer {
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
-    text-align: center;
-}
-
-
-
-
-  /*....Zewdu code for dropdown...*/
-  #container{
-
-    margin-left: 200px !important;
-    padding-bottom: 400px;
-    height:50%;
-  }

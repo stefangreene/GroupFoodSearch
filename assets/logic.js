@@ -57,6 +57,7 @@ function ourJoke(){
             jokeP.addClass("joke-text");
             jokeP.append(joke);
             $("#joke-header").append(jokeP);
+            var jokeP = $(".joke-text").text(joke.text);
     });}
 
 function ourTrivia(){
@@ -74,6 +75,7 @@ function ourTrivia(){
             triviaP.addClass("trivia-text");
             triviaP.append(trivia);
             $("#trivia-header").append(triviaP);
+            var triviaP = $(".trivia-text").text(trivia.text);
     });}
 
 function yummlyRecipe(callData){
@@ -255,11 +257,11 @@ function yummlyRecipe2(RecipeIdPar){
                               case "VITK":
                               // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[9]=resultRecipe.nutritionEstimates[k].value;
+                                // code block
+                                break;
+                                case "CA":
                                  // code block
-                                 break;
-                                 case "CA":
-                                 // code block
-                                 NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
+                                NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
                                  break;
                                  case 'MG':
                                  //console.log(resultRecipe.nutritionEstimates[k].value);
