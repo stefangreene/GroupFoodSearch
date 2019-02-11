@@ -52,7 +52,7 @@
 
 <!--BUTTON SUBMIT FORM BUTTONS.-->
 
-<form>
+<form id="searchForm">
 <div class="form-group">
     <div class="row" id="search-bar">
             <div class="col-sm-7 ml-3">                     
@@ -273,7 +273,8 @@ Diet type
         <div class="col-sm-12">
             <div class="card" id="joke-card">
             <div class="card-body" id="jokes">
-            <h3 class="card-title" id="joke-header">Food Joke!</h3>
+            <h3 id="jk">Food Joke:</h3>
+            <h2 class="card-title" id="joke-header"></h2>
                 </div>
             </div>           
         </div>
@@ -304,7 +305,8 @@ Diet type
  <div class="col-sm-12">
         <div class="card" id="trivia-card">
         <div class="card-body" id="trivia">
-        <h3 class="card-title" id="trivia-header">Trivia!</br></h3>
+        <h3 id="t">Trivia:</h3>
+        <h2 class="card-title" id="trivia-header"></h2>
             </div>
             </div>           
     </div>
@@ -318,10 +320,9 @@ Diet type
         <form class="sucess-none" id="newContact">
             <h3>Contact Us</h3>
             <div class="inputs">
-                <input type="text" value="" name="NAME" class="required name" id="name" placeholder="Name:" style=" width: 35%; float: left; background: none; padding: 1.75em 2em; margin: 0; border-radius: .25em; box-shadow: none; border: none;">
-        
-                <input type="email" value="" name="EMAIL" class="required email" id="email" placeholder="Email:" style=" width: 65%; float: left; background: none; padding: 1.75em 2em; margin: 0; border-radius: .25em; box-shadow: none; border: none;">
-                <input type="Message" value="" name="MESSAGE" class="required message" id="message" placeholder="Your Message" style=" width: 65%; float: left; background: none; padding: 1.75em 2em; margin: 0; border-radius: .25em; box-shadow: none; border: none;">
+                <input type="text" value="" name="NAME" class="required name" id="name" placeholder="Name:" >
+                <input type="email" value="" name="EMAIL" class="required email" id="email" placeholder="Email:" >
+                <input type="Message" value="" name="MESSAGE" class="required message" id="message" placeholder="Your Message" >
             </div>
             <div style="position: absolute; left: -5000px;" aria-hidden="true">
                 <input type="text" name="b_96d9e6e519173af7bdbdab9d_23138bd741" tabindex="-1" value="">
