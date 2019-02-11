@@ -1,5 +1,5 @@
 
-@media (min-width:1201px) and (max-width: 2000px) {
+@media (min-width:1401px) and (max-width: 2000px) {
 
 /*background image*/
 #backgrounIMG-box{
@@ -38,7 +38,6 @@ div#header{
     z-index: 3;
 
 }
-
 
 /*...Search Bar...*/
 div#search-bar{
@@ -489,8 +488,7 @@ p.title-search{
 }
 
 
-
-@media (min-width:701px) and (max-width: 1200px) {
+@media (min-width:701px) and (max-width: 1400px) {
 
     /*background image*/
     #backgrounIMG-box{
@@ -512,16 +510,16 @@ p.title-search{
         z-index: 6;
         height: 140px;
         background-color: rgb(170, 135, 92);
-        width: 100%;
+        width: 75%;
     
     }
     .display-3{
         font-family: 'Staatliches', cursive;
-        font-size: 145px;
-        line-height: 108px; 
+        font-size: 50px;
+        line-height: 38px; 
         text-shadow: 2px 2px 4px rgb(114, 114, 114); 
         color: white;
-        width: 100%;
+        width: 60%;
         z-index: 6;
     }
     #banner{
@@ -596,18 +594,17 @@ p.title-search{
     /*....Code for dropdown...*/
     #menu-background{
         background-color: rgb(170, 135, 92);
-        width: 70%;
+        width: 40%;
         margin-top: 70px;
         margin-left:27%;  
         position: fixed;
         z-index: 5;
     }
     .dropdown{
-        width: 95%;
-        float: right;
+        width: 40%;
         position: fixed;
-        margin-left:5%;
-        margin-top: 8px;
+        margin-left:1%;
+        margin-top: 60px;
         z-index: 5;
     }
     #dropdownMenuButton{
