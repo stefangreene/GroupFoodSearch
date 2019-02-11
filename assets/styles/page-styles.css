@@ -189,7 +189,7 @@ div#search-bar{
     border: 2px solid black;
     box-shadow: 4px 4px 6px rgb(156, 116, 67);
     position: relative;
-    margin-top: 42%;
+    margin-top: 10%;
     margin-left:9%;
     z-index: 1;
 } 
@@ -248,7 +248,7 @@ div#scrollmenu {
 /*.....yummly search cards scrollbox.....*/
 
 #picture-boxes img{
-    max-width: 100%;
+    width: 95%;
     max-height: 150px;
     margin: 10px 5px 0 5px;
     border: 0.5px solid black;
@@ -262,6 +262,7 @@ div#scrollmenu {
     overflow: auto;
     margin:10px 0 10px 20px;
 }
+
 p.title-search{
     width: 95%;
     height: 45px;
@@ -280,6 +281,7 @@ p.title-search{
     font-family: Courier, monospace;
     font-weight: bold;
     font-size: 13pt;
+    background-color: #bc987e;
 }
 
 
@@ -319,6 +321,8 @@ p.title-search{
     overflow-x: hidden;
     width: 100%; 
     border: 4px solid rgb(210, 44, 44); 
+    background-color: #bc987e;
+
 } 
 #ingredient-card{
     min-height: 425px !important;
@@ -1472,7 +1476,11 @@ p.title-search{
     
     
     
-    
+    /*...Chart....*/
+    #container {
+        position: absolute;
+        z-index: 10;
+    }
 
 
 
