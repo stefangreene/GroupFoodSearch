@@ -390,23 +390,56 @@ p.title-search{
     width: 100%;
     height: 60px;
     line-height: 60px;
-    background-color: #f5f5f5;
+    background: none;
     text-align: center;
     font-family: 'Staatliches', cursive;
     font-size: 26px;
     color:rgb(255, 119, 0);
     z-index: 1;
-    margin-top: 120%;
+    margin-top: 40%;
 }
 /*.......Form......*/
 #newContact{
     font-family: 'Staatliches', cursive;
+    font-size: 26px;
+    color:rgb(255, 119, 0);
     z-index: 1;
     position: absolute;
-    margin-top: 100%;
-    width: 100%;
+    margin-top: 10%;
+    width: 70%;
+    margin-left: 20%;
+     margin-right: 20%;
 
+}
+#name{
+width: 35%; 
+float: left; 
+background: none; 
+padding: 1.75em 2em;  
+border-radius: .25em; 
+box-shadow: none;
+ border: none;
 
+}
+#email{
+width: 35%; 
+float: left; 
+background: none; 
+padding: 1.75em 2em; margin: 0;
+ border-radius: .25em;
+box-shadow: none; 
+border: none;
+
+}
+#message{
+width: 70%; 
+float: left; 
+background: none; 
+padding: 1.75em 2em; 
+margin: 0; 
+border-radius: .25em; 
+box-shadow: none; 
+border: none;
 
 
 }
