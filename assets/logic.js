@@ -19,6 +19,14 @@ $( document ).ready(function() {
         document.getElementById("recipe-button").click();
         e.preventDefault(); 
     }, false);
+
+
+    document.getElementById('newContact').addEventListener('submit', function(e) {
+        document.getElementById("submitContact").click();
+        e.preventDefault(); 
+    }, false);
+
+
     yummlyRecipe();
     ourJoke();
     ourTrivia()
