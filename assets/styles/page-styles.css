@@ -26,8 +26,8 @@ div#header{
 }
 .display-3{
     font-family: 'Staatliches', cursive;
-    font-size: 145px;
-    line-height: 108px; 
+    font-size: 70px;
+    line-height: 50px;
     text-shadow: 2px 2px 4px rgb(114, 114, 114); 
     color: white;
     width: 100%;
@@ -49,7 +49,7 @@ div#search-bar{
     top: 0;
 }
 #searchFoodInput{
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: 'Staatliches', cursive;
     text-transform: uppercase;
     font-weight: bold;
     box-shadow: 2px 2px 5px rgb(84, 84, 84);
@@ -114,20 +114,20 @@ div#search-bar{
     width: 95%;
     float: right;
     position: fixed;
-    margin-left:5%;
+    margin-left:0%;
     margin-top: 8px;
     z-index: 5;
 }
 #dropdownMenuButton{
     padding-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
     text-align: center;
-    font-weight: bold;
-    width: 100%;
     color: rgb(255, 255, 255);
     background-color: rgb(170, 135, 92);
     font-size: 26px;
+    margin-left: -250px;
+    margin-right: 0px;  
+
 }
 .dropdown-menu {
     min-width: 120% !important;
@@ -146,6 +146,7 @@ div#search-bar{
     size: 20px !important;
     margin: 0 10px 0 0;
     text-align: left !important;
+
     
 }
 
@@ -157,7 +158,7 @@ div#search-bar{
 .mutliSelect6 ul{
     list-style: none;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Staatliches', cursive;
 }
 
 .mutliSelect input,
@@ -181,6 +182,10 @@ div#search-bar{
 
 
 /*......image scrollbox......*/
+#picture-boxes-Recipe{
+    font-family: 'Staatliches', cursive;
+    
+}
 #picture-col{
     background-color: transparent;
     width: 79.5%; 
@@ -271,14 +276,13 @@ p.title-search{
     margin: 0 5px 10px 5px;
     border-radius: 0 0 10px 10px;
     box-shadow: 2px 2px 4px rgb(208, 208, 208);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Staatliches', cursive;
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     vertical-align: middle;
     text-align: center;
-    font-family: Courier, monospace;
     font-weight: bold;
     font-size: 13pt;
     background-color: #bc987e;
@@ -336,15 +340,18 @@ p.title-search{
     box-align: top;
     min-height: 100px !important;
     width: 100%;
-    font-family: Bradley Hand, cursive;
+    font-family: 'Staatliches', cursive;
 }
 #picture-boxes-Recipe{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Staatliches', cursive;
     color: rgb(110, 110, 110);
     font-size: 18px;
 }
 #tastes-chart{
     border: 6px solid black;
+}
+tspan{
+    font-family: 'Staatliches', cursive;
 }
 
 
@@ -361,19 +368,19 @@ p.title-search{
 #joke-header{
     color: #e7eeed;
     text-align: center;
-    font-family: Bradley Hand, cursive;
+  font-family: 'Staatliches', cursive;
     font-weight: bold;
 }
 #jk{
     color: #e7eeed;
     text-align: center;
-    font-family: Bradley Hand, cursive;
+      font-family: 'Staatliches', cursive;
     font-weight: bold;  
 }
 #t{
     color: #e7eeed;
     text-align: center;
-    font-family: Bradley Hand, cursive;
+      font-family: 'Staatliches', cursive;
     font-weight: bold;  
 }
 .joke-text{
@@ -401,7 +408,7 @@ p.title-search{
 #trivia-header{
     color: #e7eeed;
     text-align: center;
-    font-family: Bradley Hand, cursive;
+    font-family: 'Staatliches', cursive;
     font-weight: bold;
 }
 .trivia-text{
@@ -543,8 +550,7 @@ p.title-search{
         top: 0;
     }
     #searchFoodInput{
-        font-family: Arial, Helvetica, sans-serif;
-        text-transform: uppercase;
+        font-family: 'Staatliches', cursive;
         font-weight: bold;
         box-shadow: 2px 2px 5px rgb(84, 84, 84);
         font-size: 22px;
@@ -614,7 +620,7 @@ p.title-search{
     }
     #dropdownMenuButton{
         padding-top: 10px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Staatliches', cursive;
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
@@ -651,7 +657,7 @@ p.title-search{
     .mutliSelect6 ul{
         list-style: none;
         font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Staatliches', cursive;
     }
     
     .mutliSelect input,
@@ -764,14 +770,13 @@ p.title-search{
         margin: 0 5px 10px 5px;
         border-radius: 0 0 10px 10px;
         box-shadow: 2px 2px 4px rgb(208, 208, 208);
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Staatliches', cursive;
         font-size: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
         vertical-align: middle;
         text-align: center;
-        font-family: Courier, monospace;
         font-weight: bold;
         font-size: 13pt;
     }
@@ -829,14 +834,16 @@ p.title-search{
         font-family: Bradley Hand, cursive;
     }
     #picture-boxes-Recipe{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Staatliches', cursive;
         color: rgb(110, 110, 110);
         font-size: 18px;
     }
     #tastes-chart{
         border: 6px solid black;
     }
-    
+    tspan{
+    font-family: 'Staatliches', cursive;
+}
     
     
     
@@ -851,19 +858,19 @@ p.title-search{
     #joke-header{
         color: #e7eeed;
         text-align: center;
-        font-family: Bradley Hand, cursive;
+        font-family: 'Staatliches', cursive;
         font-weight: bold;
     }
     #jk{
         color: #e7eeed;
         text-align: center;
-        font-family: Bradley Hand, cursive;
+          font-family: 'Staatliches', cursive;
         font-weight: bold;  
     }
     #t{
         color: #e7eeed;
         text-align: center;
-        font-family: Bradley Hand, cursive;
+         font-family: 'Staatliches', cursive;
         font-weight: bold;  
     }
     .joke-text{
@@ -891,7 +898,7 @@ p.title-search{
     #trivia-header{
         color: #e7eeed;
         text-align: center;
-        font-family: Bradley Hand, cursive;
+        font-family: 'Staatliches', cursive;
         font-weight: bold;
     }
     .trivia-text{
@@ -1009,7 +1016,7 @@ p.title-search{
     .display-3{
         font-family: 'Staatliches', cursive;
         font-size: 40px;
-        line-height: 108px; 
+        line-height: 30px;
         text-shadow: 2px 2px 4px rgb(114, 114, 114); 
         color: white;
         width: 100%;
@@ -1032,7 +1039,7 @@ p.title-search{
         top: 0;
     }
     #searchFoodInput{
-        font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Staatliches', cursive;
         text-transform: uppercase;
         font-weight: bold;
         box-shadow: 2px 2px 5px rgb(84, 84, 84);
@@ -1103,7 +1110,7 @@ p.title-search{
     }
     #dropdownMenuButton{
         padding-top: 10px;
-        font-family: Arial, Helvetica, sans-serif;
+       font-family: 'Staatliches', cursive;
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
@@ -1140,7 +1147,7 @@ p.title-search{
     .mutliSelect6 ul{
         list-style: none;
         font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
+         font-family: 'Staatliches', cursive;
     }
     
     .mutliSelect input,
@@ -1253,14 +1260,13 @@ p.title-search{
         margin: 0 5px 10px 5px;
         border-radius: 0 0 10px 10px;
         box-shadow: 2px 2px 4px rgb(208, 208, 208);
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
         vertical-align: middle;
         text-align: center;
-        font-family: Courier, monospace;
+         font-family: 'Staatliches', cursive;
         font-weight: bold;
         font-size: 13pt;
     }
@@ -1315,17 +1321,19 @@ p.title-search{
         box-align: top;
         min-height: 100px !important;
         width: 100%;
-        font-family: Bradley Hand, cursive;
+        font-family: 'Staatliches', cursive;
     }
     #picture-boxes-Recipe{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Staatliches', cursive;
         color: rgb(110, 110, 110);
         font-size: 18px;
     }
     #tastes-chart{
         border: 6px solid black;
     }
-    
+        tspan{
+    font-family: 'Staatliches', cursive;
+}
     
     
     
@@ -1340,19 +1348,19 @@ p.title-search{
     #joke-header{
         color: #e7eeed;
         text-align: center;
-        font-family: Bradley Hand, cursive;
+        font-family: 'Staatliches', cursive;
         font-weight: bold;
     }
     #jk{
         color: #e7eeed;
         text-align: center;
-        font-family: Bradley Hand, cursive;
+        font-family: 'Staatliches', cursive;
         font-weight: bold;  
     }
     #t{
         color: #e7eeed;
         text-align: center;
-        font-family: Bradley Hand, cursive;
+        font-family: 'Staatliches', cursive;
         font-weight: bold;  
     }
     .joke-text{
@@ -1380,7 +1388,7 @@ p.title-search{
     #trivia-header{
         color: #e7eeed;
         text-align: center;
-        font-family: Bradley Hand, cursive;
+        font-family: 'Staatliches', cursive;
         font-weight: bold;
     }
     .trivia-text{
