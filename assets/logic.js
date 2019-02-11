@@ -131,7 +131,7 @@ $.ajax({
                     searchResults.append(anchorTagImage);
                     searchResults.append(textAnchorTag);
                      $("#picture-boxes").prepend(searchResults); 
-    }
+}
 
 
 
@@ -202,7 +202,7 @@ function yummlyRecipe2(RecipeIdPar){
                                recipeTitleP.append(recipeTitleName); 
                                recipeTitleP.append(recipeTitleP);
                                $("#RecipeTitle").append(recipeTitleP);
-                               $("#RecipeTitle").append('<h1> Ingredients</h1>');
+                               
 
                            var orderedList = $("<ol>");
                           for(var i=0;i<resultRecipeLength; i++){
@@ -210,96 +210,69 @@ function yummlyRecipe2(RecipeIdPar){
                                orderedListItem.append(resultRecipe.ingredientLines[i]); 
                                orderedList.append(orderedListItem);
                                $("#picture-boxes-Recipe").append(orderedList);
-                                 
-                          }       
-                        /*/.....stefans attempt to add site references......
-                        var recipeSiteSource = results.matches.sourceSiteUrl;
-                        for(var s=0; s<)
-                        console.log(recipeSiteSource);
-                        var recipeSite = $("<h4>");
-                        recipeSite.addClass("source-site");  
-                        var recipeSiteSource = results.matches.sourceSiteUrl;
-                        recipeSite.append(recipeSiteSource);
-                        recipeSite.append(recipeSite);
-                        $("#source-site").append(recipeSite);
-                        $("#source-site").append('<h4> Site </h4>');
-                           var returnTitle = resultsRecipe.recipeName.length;
-
-                           console.log(results.matches[j].hostedMediumUrl);
-                           var recipeSource = results.matches[j].sourceDisplayName;
-                           var recipeSourceUrl = results.matches[j].sourceRecipeUrl;
-                           var recipeSiteUrl = results.matches[j].sourceSiteUrl;
-                                console.log(recipeSource);
-                                console.log(recipeSourceUrl);  
-                                console.log(recipeSiteUrl);             
-                                var picImage = results.matches[j].hostedMediumUrl;
-                                var RecipeIdPar=results.matches[j].id;
-                                var anchorTagImage = $("<div>");
-                                var textAnchorTag = $("<div>");
-                        //create div for single reutrn item.
-                                var searchResults = $("<div>");
-                        //create <p> tag for returnTitles.
-                                var p = $("<p>")*/
-                       
-                    
+                                   
+                          }   
+                          $("#picture-boxes-Recipe").prepend('<h1> Ingredients</h1>');    
+                   
+                
                     
                         var nutritionEstimateLength=resultRecipe.nutritionEstimates.length;    
                         for(var k=0;k<nutritionEstimateLength; k++){
                             var NutritionEstimate=resultRecipe.nutritionEstimates[k].attribute;
                         switch(NutritionEstimate) {
-                            case 'FAT_KCAL':
-                             // console.log(resultRecipe.nutritionEstimates[k].value);
+                              case 'FAT_KCAL':
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
                               NutritionEstimateArray[0]=resultRecipe.nutritionEstimates[k].value;
                               break;
-                            case "K":
-                           // console.log(resultRecipe.nutritionEstimates[k].value);
+                              case "K":
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[1]=resultRecipe.nutritionEstimates[k].value;
                               // code block
                               break;
                               case "FASAT":
                               // code block
-                              NutritionEstimateArray[2]=resultRecipe.nutritionEstimates[k].value;
+                            NutritionEstimateArray[2]=resultRecipe.nutritionEstimates[k].value;
                               break;
                               case 'STARCH':
                               //console.log(resultRecipe.nutritionEstimates[k].value);
-                              NutritionEstimateArray[3]=resultRecipe.nutritionEstimates[k].value;
+                            NutritionEstimateArray[3]=resultRecipe.nutritionEstimates[k].value;
                               break;
-                            case "GLUS":
-                           // console.log(resultRecipe.nutritionEstimates[k].value);
+                              case "GLUS":
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[4]=resultRecipe.nutritionEstimates[k].value;
                               // code block
-                              break;
+                           /*   break;
                               case 'FE':
-                             // console.log(resultRecipe.nutritionEstimates[k].value);
-                              NutritionEstimateArray[5]=resultRecipe.nutritionEstimates[k].value;
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
+                            NutritionEstimateArray[5]=resultRecipe.nutritionEstimates[k].value;
                               break;
-                            case "TOCPHA":
-                           // console.log(resultRecipe.nutritionEstimates[k].value);
+                              case "TOCPHA":
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[6]=resultRecipe.nutritionEstimates[k].value;
                               // code block
                               break;
                               case "FAMS":
                               // code block
-                              NutritionEstimateArray[7]=resultRecipe.nutritionEstimates[k].value;
+                            NutritionEstimateArray[7]=resultRecipe.nutritionEstimates[k].value;
                               break;
                               case 'CHOCDF':
                               //console.log(resultRecipe.nutritionEstimates[k].value);
-                              NutritionEstimateArray[8]=resultRecipe.nutritionEstimates[k].value;
+                            NutritionEstimateArray[8]=resultRecipe.nutritionEstimates[k].value;
                               break;
                               case "VITK":
                               // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[9]=resultRecipe.nutritionEstimates[k].value;
                                 // code block
-                               break;
-                               case "CA":
+                              break;
+                              case "CA":
                                  // code block
-                                NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
-                                 break;
-                                 case 'MG':
+                            NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
+                              break;
+                              case 'MG':
                                  //console.log(resultRecipe.nutritionEstimates[k].value);
-                                 NutritionEstimateArray[11]=resultRecipe.nutritionEstimates[k].value;
-                                 break;
-                              
+                            NutritionEstimateArray[11]=resultRecipe.nutritionEstimates[k].value;
+                              break;
+                              */
                             default:
                               // code block
                           }
@@ -414,5 +387,4 @@ Highcharts.chart('container', {
 });
  }
 
-        //CHANGE FOR GIT
 

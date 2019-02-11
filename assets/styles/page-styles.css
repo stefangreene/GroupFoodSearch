@@ -1,78 +1,92 @@
+
+@media (min-width:1401px) and (max-width: 2000px) {
+
 /*background image*/
-.background-image{
-    width:100%;
-    height: auto;
+#backgrounIMG-box{
     position: absolute;
+    border: 1px solid rgb(255, 119, 0);
+}
+.background-image{
+    position: absolute;
+    width: 95%;
+    height: auto;
     z-index: 1;
 }
 
 /*......Header style.....*/
 div#header{
-    height: 400px;
-    position: absolute;
-    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    height: 140px;
+    background-color: rgb(170, 135, 92);
     width: 100%;
+
 }
 .display-3{
-    margin-top: 25%;
     font-family: 'Staatliches', cursive;
-    font-size: 280px;
-    text-shadow: 3px 3px 5px rgb(156, 116, 67); 
+    font-size: 145px;
+    line-height: 108px; 
+    text-shadow: 2px 2px 4px rgb(114, 114, 114); 
     color: white;
     width: 100%;
-    position: absolute;
-    text-align: center;
+    z-index: 6;
 }
 #banner{
     width: 100%;
-    position: absolute;
-    z-index: 1;
+    z-index: 3;
 
 }
-
 
 /*...Search Bar...*/
 div#search-bar{
-    position: absolute;
-    width: 80%;
-    z-index: 1;
-    margin-top: 37%;
-    margin-left: 10%;
+    width: 100%;
+    z-index: 4;
+    margin-top: 10px; 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 #searchFoodInput{
-    font-family: 'Staatliches', cursive;
-    box-shadow: 2px 2px 3px rgb(156, 116, 67);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgb(84, 84, 84);
     font-size: 22px;
     border: 1px solid rgb(255, 119, 0);
-    height:50px;
-    margin-right: 10px;
-    width: 745px;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 5;
 }
 #recipe-button{
     color: rgb(62, 62, 62);
     background-color: rgb(69, 245, 41);
     border: 1px solid rgb(69, 245, 41);
-    box-shadow: 2px 2px 3px rgb(156, 116, 67);
+    box-shadow: 2px 2px 5px rgb(84, 84, 84);
     font-family: 'Staatliches', cursive;
-    font-size: 20px;
-    margin-left: 0;
-    height:50px;
+    font-size: 22px;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
 }
 #button-clear{
     background-color: rgb(255, 119, 0);
     border: 1px solid rgb(255, 119, 0);
     font-family: 'Staatliches', cursive;
-    box-shadow: 2px 2px 3px rgb(156, 116, 67);
-    margin-left: 5px;
-    font-size: 20px;
+    box-shadow: 2px 2px 5px rgb(92, 92, 92);
+    width: 100%;
+    font-size: 22px;
+    margin-top: 20px;
     height:50px;
 }
 #yummly-tag{
     width: 200px;
-    margin-left: 5px;
+    margin: 0 5px 0 5px;
     font-family: 'Staatliches', cursive;
-    box-shadow: 2px 2px 3px rgb(156, 116, 67);
-    font-size: 20px;
+    box-shadow: 2px 2px 3px rgb(84, 84, 84);
+    font-size: 22px;
     color: rgb(62, 62, 62);
     background-color: white;
     height:50px;
@@ -86,29 +100,34 @@ div#search-bar{
 
 
 
+
 /*....Code for dropdown...*/
 #menu-background{
-    background-color: rgb(118, 88, 51);
-    border-radius: 5px;
-    width: 80%;
-    margin-top: 40.5%;
-    margin-left: 9%; 
-    position: absolute;
-    z-index: 2;
+    background-color: rgb(170, 135, 92);
+    width: 95%;
+    margin-top: 70px;
+    margin-left:27%;  
+    position: fixed;
+    z-index: 5;
 }
 .dropdown{
-    width: 100%;
-    float: left;
-    position: absolute;
-    z-index: 1;
+    width: 95%;
+    float: right;
+    position: fixed;
+    margin-left:5%;
+    margin-top: 8px;
+    z-index: 5;
 }
 #dropdownMenuButton{
-    font-family: 'Staatliches', cursive;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     text-align: center;
-    width:175px;
-    color: rgb(255, 119, 0);
-    background-color: rgb(118, 88, 51);
-    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(170, 135, 92);
+    font-size: 26px;
 }
 .dropdown-menu {
     min-width: 120% !important;
@@ -164,18 +183,18 @@ div#search-bar{
 /*......image scrollbox......*/
 #picture-col{
     background-color: transparent;
-    width: 74%; 
+    width: 79.5%; 
     border-radius: 5px;
-    min-height: 290px !important;
+    min-height: 340px !important;
     border: 2px solid black;
     box-shadow: 4px 4px 6px rgb(156, 116, 67);
     position: relative;
-    margin-top: 46%;
-    margin-left:13%;
+    margin-top: 42%;
+    margin-left:9%;
     z-index: 1;
 } 
 #scrollbox{    
-    height:286px;    
+    min-height: 340px !important;    
     overflow:auto; 
     overflow-x:hidden;
     width: 100%; 
@@ -225,16 +244,11 @@ div#scrollmenu {
     cursor: pointer;
 }
 
-#picture-boxes{
-    
-
-}
-
 
 /*.....yummly search cards scrollbox.....*/
 
 #picture-boxes img{
-    max-width: 95%;
+    max-width: 100%;
     max-height: 150px;
     margin: 10px 5px 0 5px;
     border: 0.5px solid black;
@@ -297,16 +311,41 @@ p.title-search{
     border: 2px solid black;
     box-shadow: 4px 4px 6px rgb(156, 116, 67);
     position: relative;
-
     z-index: 1;
 } 
 #result-box{    
-    min-height: 425px !important;    
+    min-height: 425px !important;
     overflow:auto; 
-    overflow-x:hidden;
+    overflow-x: hidden;
     width: 100%; 
     border: 4px solid rgb(210, 44, 44); 
-}  
+} 
+#ingredient-card{
+    min-height: 425px !important;
+    border: 0.5px solid black;
+    border-radius: 5px;
+
+}
+#RecipeTitle{
+    border: black;
+    border-bottom:solid;
+    box-align: top;
+    min-height: 100px !important;
+    width: 100%;
+    font-family: Bradley Hand, cursive;
+}
+#picture-boxes-Recipe{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(110, 110, 110);
+    font-size: 18px;
+}
+#tastes-chart{
+    border: 6px solid black;
+}
+
+
+
+
 
 
 /*.......trivia and Joke styles........*/
@@ -394,6 +433,9 @@ p.title-search{
     text-align: center;
     font-family: 'Staatliches', cursive;
     font-size: 26px;
+    color: white;
+    z-index: 2;
+
     color:rgb(255, 119, 0);
     z-index: 1;
     margin-top: 40%;
@@ -405,41 +447,1032 @@ p.title-search{
     color:rgb(255, 119, 0);
     z-index: 1;
     position: absolute;
+    margin-top: 100%;
+    width: 100%;
     margin-top: 10%;
     width: 70%;
     margin-left: 20%;
-     margin-right: 20%;
+    margin-right: 20%;
 
 }
 #name{
-width: 35%; 
-float: left; 
-background: none; 
-padding: 1.75em 2em;  
-border-radius: .25em; 
-box-shadow: none;
- border: none;
+    width: 35%; 
+    float: left; 
+    background: none; 
+    padding: 1.75em 2em;  
+    border-radius: .25em; 
+    box-shadow: none;
+    border: none;
 
 }
 #email{
-width: 35%; 
-float: left; 
-background: none; 
-padding: 1.75em 2em; margin: 0;
- border-radius: .25em;
-box-shadow: none; 
-border: none;
+    width: 35%; 
+    float: left; 
+    background: none; 
+    padding: 1.75em 2em; margin: 0;
+    border-radius: .25em;
+    box-shadow: none; 
+    border: none;
 
 }
 #message{
-width: 70%; 
-float: left; 
-background: none; 
-padding: 1.75em 2em; 
-margin: 0; 
-border-radius: .25em; 
-box-shadow: none; 
-border: none;
-
-
+    width: 70%; 
+    float: left; 
+    background: none; 
+    padding: 1.75em 2em; 
+    margin: 0; 
+    border-radius: .25em; 
+    box-shadow: none; 
+    border: none;
 }
+}
+
+
+@media (min-width:701px) and (max-width: 1400px) {
+
+    /*background image*/
+    #backgrounIMG-box{
+        position: absolute;
+        border: 1px solid rgb(255, 119, 0);
+    }
+    .background-image{
+        position: absolute;
+        width: 95%;
+        height: auto;
+        z-index: 1;
+    }
+    
+    /*......Header style.....*/
+    div#header{
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 6;
+        height: 140px;
+        background-color: rgb(170, 135, 92);
+        width: 100%;
+    
+    }
+    .display-3{
+        font-family: 'Staatliches', cursive;
+        font-size: 100px;
+        line-height: 38px; 
+        text-shadow: 2px 2px 4px rgb(114, 114, 114); 
+        color: white;
+        width: 60%;
+        z-index: 6;
+    }
+    #banner{
+        width: 100%;
+        z-index: 3;
+    
+    }
+    
+    
+    /*...Search Bar...*/
+    div#search-bar{
+        width: 100%;
+        z-index: 4;
+        margin-top: 10px; 
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+    }
+    #searchFoodInput{
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgb(84, 84, 84);
+        font-size: 22px;
+        border: 1px solid rgb(255, 119, 0);
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        z-index: 5;
+    }
+    #recipe-button{
+        color: rgb(62, 62, 62);
+        background-color: rgb(69, 245, 41);
+        border: 1px solid rgb(69, 245, 41);
+        box-shadow: 2px 2px 5px rgb(84, 84, 84);
+        font-family: 'Staatliches', cursive;
+        font-size: 22px;
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+    }
+    #button-clear{
+        background-color: rgb(255, 119, 0);
+        border: 1px solid rgb(255, 119, 0);
+        font-family: 'Staatliches', cursive;
+        box-shadow: 2px 2px 5px rgb(92, 92, 92);
+        width: 100%;
+        font-size: 22px;
+        margin-top: 20px;
+        height:50px;
+    }
+    #yummly-tag{
+        width: 200px;
+        margin: 0 5px 0 5px;
+        font-family: 'Staatliches', cursive;
+        box-shadow: 2px 2px 3px rgb(84, 84, 84);
+        font-size: 22px;
+        color: rgb(62, 62, 62);
+        background-color: white;
+        height:50px;
+    }
+    #small-yum{
+        width: 60px;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    
+    
+    
+    
+    /*....Code for dropdown...*/
+    #menu-background{
+        background-color: rgb(170, 135, 92);
+        width: 40%;
+        margin-top: 70px;
+        margin-left:10%;  
+        position: fixed;
+        z-index: 5;
+    }
+    .dropdown{
+        width: 40%;
+        position: fixed;
+        float: left;
+        margin-left:1%;
+        margin-top: 60px;
+        z-index: 5;
+    }
+    #dropdownMenuButton{
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        background-color: rgb(170, 135, 92);
+        font-size: 26px;
+    }
+    .dropdown-menu {
+        min-width: 120% !important;
+        border: 1px solid black;
+        font-size: 20px;
+        border:1px solid black !important;
+     }
+    .dropdown-menu ul{
+        padding-left:20px !important;
+        
+     }
+    .dropdown-item{
+        font-size: 20px;
+    }
+    .multiSelect input[type="checkbox"]{
+        size: 20px !important;
+        margin: 0 10px 0 0;
+        text-align: left !important;
+        
+    }
+    
+    .mutliSelect1 ul,
+    .mutliSelect2 ul,
+    .mutliSelect3 ul,
+    .mutliSelect4 ul,
+    .mutliSelect5 ul,
+    .mutliSelect6 ul{
+        list-style: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .mutliSelect input,
+    .mutliSelect1 input,
+    .mutliSelect2 input,
+    .mutliSelect3 input,
+    .mutliSelect4 input,
+    .dropdown-menu input{margin-right:10px !important;}
+    
+     .multiSe1,
+     .multiSel2,
+     .multiSel3,
+     .multiSel4,
+     .multiSel5,
+     .multiSel6{display:none}
+    
+    
+    
+    
+    
+    
+    
+    /*......image scrollbox......*/
+    #picture-col{
+        background-color: transparent;
+        width: 79.5%; 
+        border-radius: 5px;
+        min-height: 340px !important;
+        border: 2px solid black;
+        box-shadow: 4px 4px 6px rgb(156, 116, 67);
+        position: relative;
+        margin-top: 42%;
+        margin-left:9%;
+        z-index: 1;
+    } 
+    #scrollbox{    
+        min-height: 340px !important;    
+        overflow:auto; 
+        overflow-x:hidden;
+        width: 100%; 
+        border: 4px solid rgb(210, 44, 44); 
+    }  
+    div#scrollmenu {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    #yummly {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          margin:5px 10px 5px 10px;
+          text-decoration: none;    
+    }
+    #yummly:hover {
+          background-color: #777;
+    }
+    .slidecontainer {
+        width: 100%;
+    }
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 25px;
+        background: #ae2121;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 3s;
+        transition: opacity .2s;
+    }
+    .slider:hover {
+        opacity: 1;
+        cursor: pointer !important;
+    }
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    
+    
+    /*.....yummly search cards scrollbox.....*/
+    
+    #picture-boxes img{
+        max-width: 100%;
+        max-height: 150px;
+        margin: 10px 5px 0 5px;
+        border: 0.5px solid black;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 2px 2px 4px rgb(208, 208, 208);
+    }
+    .image-search{
+        height: auto;
+        max-width: 40%;
+        border: 3px solid black;
+        overflow: auto;
+        margin:10px 0 10px 20px;
+    }
+    p.title-search{
+        width: 95%;
+        height: 45px;
+        padding: 3px 0 0 5px;
+        border: 0.5px solid black;
+        margin: 0 5px 10px 5px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 2px 2px 4px rgb(208, 208, 208);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center;
+        font-family: Courier, monospace;
+        font-weight: bold;
+        font-size: 13pt;
+    }
+    
+    
+    
+    
+    /*....Recipe result page break....*/
+    
+    #result-break{
+        position: relative;
+        font-family: 'Staatliches', cursive;
+        color:rgb(63, 63, 63) ;
+        font-size: 20px;
+        text-align: center;
+        z-index: 1;
+    }
+    #big-yummly{
+        height: 50px;
+        width: 175px;
+        margin-left: 10px;
+    }
+    
+    
+    /*....Recipe result box....*/
+    #result-col{
+        background: transparent;
+        width: 100%; 
+        border-radius: 5px;
+        min-height: 425px !important;
+        border: 2px solid black;
+        box-shadow: 4px 4px 6px rgb(156, 116, 67);
+        position: relative;
+        z-index: 1;
+    } 
+    #result-box{    
+        min-height: 425px !important;
+        overflow:auto; 
+        overflow-x: hidden;
+        width: 100%; 
+        border: 4px solid rgb(210, 44, 44); 
+    } 
+    #ingredient-card{
+        min-height: 425px !important;
+        border: 0.5px solid black;
+        border-radius: 5px;
+    
+    }
+    #RecipeTitle{
+        border: black;
+        border-bottom:solid;
+        box-align: top;
+        min-height: 100px !important;
+        width: 100%;
+        font-family: Bradley Hand, cursive;
+    }
+    #picture-boxes-Recipe{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(110, 110, 110);
+        font-size: 18px;
+    }
+    #tastes-chart{
+        border: 6px solid black;
+    }
+    
+    
+    
+    
+    
+    
+    /*.......trivia and Joke styles........*/
+    
+    #jokes{
+        color: #e7eeed;
+        background-color: rgba(0,0,0,0.5)
+    }
+    #joke-header{
+        color: #e7eeed;
+        text-align: center;
+        font-family: Bradley Hand, cursive;
+        font-weight: bold;
+    }
+    #jk{
+        color: #e7eeed;
+        text-align: center;
+        font-family: Bradley Hand, cursive;
+        font-weight: bold;  
+    }
+    #t{
+        color: #e7eeed;
+        text-align: center;
+        font-family: Bradley Hand, cursive;
+        font-weight: bold;  
+    }
+    .joke-text{
+        font-size: 20px;
+        color: #e7eeed;
+    }
+    #joke-card{
+        border: 3px solid black;
+        border-radius: 5px;
+        margin-top: 10%;
+        margin-left: 8%; 
+        min-height: 360px;
+        width: 200px;
+        float: left;
+        padding: 0 10px 10px 10px;
+        background-image: url("../../images/4.jpg");
+        background-size: cover;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 2;
+    }
+    #trivia{
+        background-color: rgba(0,0,0,0.5);
+    }
+    #trivia-header{
+        color: #e7eeed;
+        text-align: center;
+        font-family: Bradley Hand, cursive;
+        font-weight: bold;
+    }
+    .trivia-text{
+        font-size: 20px;
+        color: #e7eeed;
+    }
+    
+    #trivia-card{
+        border: 3px solid black;
+        border-radius: 5px;
+        margin-top: 7%;
+        margin-left: 1%; 
+        min-height: 360px;
+        width: 200px;
+        float: left;
+        padding: 0 10px 10px 10px;
+        background-image: url("../../images/3.jpg");
+        background-size: cover;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    
+    /*.......Footer.......*/
+    
+    .footer {
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background: none;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-size: 26px;
+        color: white;
+        z-index: 2;
+    
+        color:rgb(255, 119, 0);
+        z-index: 1;
+        margin-top: 40%;
+    }
+    /*.......Form......*/
+    #newContact{
+        font-family: 'Staatliches', cursive;
+        font-size: 26px;
+        color:rgb(255, 119, 0);
+        z-index: 1;
+        position: absolute;
+        margin-top: 100%;
+        width: 100%;
+        margin-top: 10%;
+        width: 70%;
+        margin-left: 20%;
+        margin-right: 20%;
+    
+    }
+    #name{
+        width: 35%; 
+        float: left; 
+        background: none; 
+        padding: 1.75em 2em;  
+        border-radius: .25em; 
+        box-shadow: none;
+        border: none;
+    
+    }
+    #email{
+        width: 35%; 
+        float: left; 
+        background: none; 
+        padding: 1.75em 2em; margin: 0;
+        border-radius: .25em;
+        box-shadow: none; 
+        border: none;
+    
+    }
+    #message{
+        width: 70%; 
+        float: left; 
+        background: none; 
+        padding: 1.75em 2em; 
+        margin: 0; 
+        border-radius: .25em; 
+        box-shadow: none; 
+        border: none;
+    }
+    }
+
+
+@media (min-width:400px) and (max-width: 700px) {
+
+    /*background image*/
+    #backgrounIMG-box{
+        position: absolute;
+    }
+    .background-image{
+        position: absolute;
+        width: 95%;
+        height: auto;
+        z-index: 1;
+    }
+    
+    /*......Header style.....*/
+    div#header{
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 6;
+        height: 140px;
+        background-color: rgb(170, 135, 92);
+        width: 100%;
+    
+    }
+    .display-3{
+        font-family: 'Staatliches', cursive;
+        font-size: 40px;
+        line-height: 108px; 
+        text-shadow: 2px 2px 4px rgb(114, 114, 114); 
+        color: white;
+        width: 100%;
+        z-index: 6;
+    }
+    #banner{
+        width: 100%;
+        z-index: 3;
+    
+    }
+    
+    
+    /*...Search Bar...*/
+    div#search-bar{
+        width: 100%;
+        z-index: 4;
+        margin-top: 10px; 
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+    }
+    #searchFoodInput{
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgb(84, 84, 84);
+        font-size: 22px;
+        border: 1px solid rgb(255, 119, 0);
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        z-index: 5;
+    }
+    #recipe-button{
+        color: rgb(62, 62, 62);
+        background-color: rgb(69, 245, 41);
+        border: 1px solid rgb(69, 245, 41);
+        box-shadow: 2px 2px 5px rgb(84, 84, 84);
+        font-family: 'Staatliches', cursive;
+        font-size: 22px;
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+    }
+    #button-clear{
+        background-color: rgb(255, 119, 0);
+        border: 1px solid rgb(255, 119, 0);
+        font-family: 'Staatliches', cursive;
+        box-shadow: 2px 2px 5px rgb(92, 92, 92);
+        width: 100%;
+        font-size: 22px;
+        margin-top: 20px;
+        height:50px;
+    }
+    #yummly-tag{
+        width: 200px;
+        margin: 0 5px 0 5px;
+        font-family: 'Staatliches', cursive;
+        box-shadow: 2px 2px 3px rgb(84, 84, 84);
+        font-size: 22px;
+        color: rgb(62, 62, 62);
+        background-color: white;
+        height:50px;
+    }
+    #small-yum{
+        width: 60px;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    
+    
+    
+    
+    /*....Code for dropdown...*/
+    #menu-background{
+        background-color: rgb(170, 135, 92);
+        width: 70%;
+        margin-top: 150px;
+        margin-left:5%;  
+        position: fixed;
+        z-index: 5;
+    }
+    .dropdown{
+        width: 95%;
+        float: left;
+        position: fixed;
+        margin-left:5%;
+        margin-top: 8px;
+        z-index: 5;
+    }
+    #dropdownMenuButton{
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        background-color: rgb(170, 135, 92);
+        font-size: 17px;
+    }
+    .dropdown-menu {
+        min-width: 120% !important;
+        border: 1px solid black;
+        font-size: 20px;
+        border:1px solid black !important;
+     }
+    .dropdown-menu ul{
+        padding-left:20px !important;
+        
+     }
+    .dropdown-item{
+        font-size: 20px;
+    }
+    .multiSelect input[type="checkbox"]{
+        size: 20px !important;
+        margin: 0 10px 0 0;
+        text-align: left !important;
+        
+    }
+    
+    .mutliSelect1 ul,
+    .mutliSelect2 ul,
+    .mutliSelect3 ul,
+    .mutliSelect4 ul,
+    .mutliSelect5 ul,
+    .mutliSelect6 ul{
+        list-style: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .mutliSelect input,
+    .mutliSelect1 input,
+    .mutliSelect2 input,
+    .mutliSelect3 input,
+    .mutliSelect4 input,
+    .dropdown-menu input{margin-right:10px !important;}
+    
+     .multiSe1,
+     .multiSel2,
+     .multiSel3,
+     .multiSel4,
+     .multiSel5,
+     .multiSel6{display:none}
+    
+    
+    
+    
+    
+    
+    
+    /*......image scrollbox......*/
+    #picture-col{
+        background-color: transparent;
+        width: 79.5%; 
+        border-radius: 5px;
+        min-height: 340px !important;
+        border: 2px solid black;
+        box-shadow: 4px 4px 6px rgb(156, 116, 67);
+        position: relative;
+        margin-top: 42%;
+        margin-left:9%;
+        z-index: 1;
+    } 
+    #scrollbox{    
+        min-height: 340px !important;    
+        overflow:auto; 
+        overflow-x:hidden;
+        width: 100%; 
+        border: 4px solid rgb(210, 44, 44); 
+    }  
+    div#scrollmenu {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    #yummly {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          margin:5px 10px 5px 10px;
+          text-decoration: none;    
+    }
+    #yummly:hover {
+          background-color: #777;
+    }
+    .slidecontainer {
+        width: 100%;
+    }
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 25px;
+        background: #ae2121;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 3s;
+        transition: opacity .2s;
+    }
+    .slider:hover {
+        opacity: 1;
+        cursor: pointer !important;
+    }
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    
+    
+    /*.....yummly search cards scrollbox.....*/
+    
+    #picture-boxes img{
+        max-width: 100%;
+        max-height: 150px;
+        margin: 10px 5px 0 5px;
+        border: 0.5px solid black;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 2px 2px 4px rgb(208, 208, 208);
+    }
+    .image-search{
+        height: auto;
+        max-width: 40%;
+        border: 3px solid black;
+        overflow: auto;
+        margin:10px 0 10px 20px;
+    }
+    p.title-search{
+        width: 95%;
+        height: 45px;
+        padding: 3px 0 0 5px;
+        border: 0.5px solid black;
+        margin: 0 5px 10px 5px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 2px 2px 4px rgb(208, 208, 208);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center;
+        font-family: Courier, monospace;
+        font-weight: bold;
+        font-size: 13pt;
+    }
+    
+    
+    
+    
+    /*....Recipe result page break....*/
+    
+    #result-break{
+        position: relative;
+        font-family: 'Staatliches', cursive;
+        color:rgb(63, 63, 63) ;
+        font-size: 20px;
+        text-align: center;
+        z-index: 1;
+    }
+    #big-yummly{
+        height: 50px;
+        width: 175px;
+        margin-left: 10px;
+    }
+    
+    
+    /*....Recipe result box....*/
+    #result-col{
+        background: transparent;
+        width: 100%; 
+        border-radius: 5px;
+        min-height: 425px !important;
+        border: 2px solid black;
+        box-shadow: 4px 4px 6px rgb(156, 116, 67);
+        position: relative;
+        z-index: 1;
+    } 
+    #result-box{    
+        min-height: 425px !important;
+        overflow:auto; 
+        overflow-x: hidden;
+        width: 100%; 
+        border: 4px solid rgb(210, 44, 44); 
+    } 
+    #ingredient-card{
+        min-height: 425px !important;
+        border: 0.5px solid black;
+        border-radius: 5px;
+    
+    }
+    #RecipeTitle{
+        border: black;
+        border-bottom:solid;
+        box-align: top;
+        min-height: 100px !important;
+        width: 100%;
+        font-family: Bradley Hand, cursive;
+    }
+    #picture-boxes-Recipe{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(110, 110, 110);
+        font-size: 18px;
+    }
+    #tastes-chart{
+        border: 6px solid black;
+    }
+    
+    
+    
+    
+    
+    
+    /*.......trivia and Joke styles........*/
+    
+    #jokes{
+        color: #e7eeed;
+        background-color: rgba(0,0,0,0.5)
+    }
+    #joke-header{
+        color: #e7eeed;
+        text-align: center;
+        font-family: Bradley Hand, cursive;
+        font-weight: bold;
+    }
+    #jk{
+        color: #e7eeed;
+        text-align: center;
+        font-family: Bradley Hand, cursive;
+        font-weight: bold;  
+    }
+    #t{
+        color: #e7eeed;
+        text-align: center;
+        font-family: Bradley Hand, cursive;
+        font-weight: bold;  
+    }
+    .joke-text{
+        font-size: 20px;
+        color: #e7eeed;
+    }
+    #joke-card{
+        border: 3px solid black;
+        border-radius: 5px;
+        margin-top: 10%;
+        margin-left: 8%; 
+        min-height: 360px;
+        width: 200px;
+        float: left;
+        padding: 0 10px 10px 10px;
+        background-image: url("../../images/4.jpg");
+        background-size: cover;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 2;
+    }
+    #trivia{
+        background-color: rgba(0,0,0,0.5);
+    }
+    #trivia-header{
+        color: #e7eeed;
+        text-align: center;
+        font-family: Bradley Hand, cursive;
+        font-weight: bold;
+    }
+    .trivia-text{
+        font-size: 20px;
+        color: #e7eeed;
+    }
+    
+    #trivia-card{
+        border: 3px solid black;
+        border-radius: 5px;
+        margin-top: 7%;
+        margin-left: 1%; 
+        min-height: 360px;
+        width: 200px;
+        float: left;
+        padding: 0 10px 10px 10px;
+        background-image: url("../../images/3.jpg");
+        background-size: cover;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    
+    /*.......Footer.......*/
+    
+    .footer {
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background: none;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-size: 26px;
+        color: white;
+        z-index: 2;
+    
+        color:rgb(255, 119, 0);
+        z-index: 1;
+        margin-top: 40%;
+    }
+    /*.......Form......*/
+    #newContact{
+        font-family: 'Staatliches', cursive;
+        font-size: 26px;
+        color:rgb(255, 119, 0);
+        z-index: 1;
+        position: absolute;
+        margin-top: 100%;
+        width: 100%;
+        margin-top: 10%;
+        width: 70%;
+        margin-left: 20%;
+        margin-right: 20%;
+    
+    }
+    #name{
+        width: 35%; 
+        float: left; 
+        background: none; 
+        padding: 1.75em 2em;  
+        border-radius: .25em; 
+        box-shadow: none;
+        border: none;
+    
+    }
+    #email{
+        width: 35%; 
+        float: left; 
+        background: none; 
+        padding: 1.75em 2em; margin: 0;
+        border-radius: .25em;
+        box-shadow: none; 
+        border: none;
+    
+    }
+    #message{
+        width: 70%; 
+        float: left; 
+        background: none; 
+        padding: 1.75em 2em; 
+        margin: 0; 
+        border-radius: .25em; 
+        box-shadow: none; 
+        border: none;
+    }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
