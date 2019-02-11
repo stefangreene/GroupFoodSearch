@@ -104,7 +104,7 @@ div#search-bar{
 /*....Code for dropdown...*/
 #menu-background{
     background-color: rgb(170, 135, 92);
-    width: 70%;
+    width: 95%;
     margin-top: 70px;
     margin-left:27%;  
     position: fixed;
@@ -510,12 +510,12 @@ p.title-search{
         z-index: 6;
         height: 140px;
         background-color: rgb(170, 135, 92);
-        width: 75%;
+        width: 100%;
     
     }
     .display-3{
         font-family: 'Staatliches', cursive;
-        font-size: 50px;
+        font-size: 100px;
         line-height: 38px; 
         text-shadow: 2px 2px 4px rgb(114, 114, 114); 
         color: white;
@@ -596,13 +596,14 @@ p.title-search{
         background-color: rgb(170, 135, 92);
         width: 40%;
         margin-top: 70px;
-        margin-left:27%;  
+        margin-left:10%;  
         position: fixed;
         z-index: 5;
     }
     .dropdown{
         width: 40%;
         position: fixed;
+        float: left;
         margin-left:1%;
         margin-top: 60px;
         z-index: 5;
@@ -1003,7 +1004,7 @@ p.title-search{
     }
     .display-3{
         font-family: 'Staatliches', cursive;
-        font-size: 145px;
+        font-size: 40px;
         line-height: 108px; 
         text-shadow: 2px 2px 4px rgb(114, 114, 114); 
         color: white;
@@ -1083,14 +1084,14 @@ p.title-search{
     #menu-background{
         background-color: rgb(170, 135, 92);
         width: 70%;
-        margin-top: 70px;
-        margin-left:27%;  
+        margin-top: 150px;
+        margin-left:5%;  
         position: fixed;
         z-index: 5;
     }
     .dropdown{
         width: 95%;
-        float: right;
+        float: left;
         position: fixed;
         margin-left:5%;
         margin-top: 8px;
@@ -1105,7 +1106,7 @@ p.title-search{
         width: 100%;
         color: rgb(255, 255, 255);
         background-color: rgb(170, 135, 92);
-        font-size: 26px;
+        font-size: 17px;
     }
     .dropdown-menu {
         min-width: 120% !important;
