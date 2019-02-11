@@ -941,9 +941,9 @@ p.title-search{
         color:rgb(255, 119, 0);
         z-index: 1;
         position: absolute;
-       
+        margin-top: 100%;
         width: 100%;
-       
+        margin-top: 10%;
         width: 70%;
         margin-left: 20%;
         margin-right: 20%;
@@ -1480,7 +1480,6 @@ p.title-search{
     #container {
         position: absolute;
         z-index: 10;
-        width:100%;
     }
 
 
