@@ -11,9 +11,13 @@ var Calories=[];
 var Potassium=[];
 var SaturatedFat=[];
 var NutritionEstimateArray=[0,0,0,0,0,0,0,0,0,0,0]
+
 $( document ).ready(function() {
     //$('.IngredientShow').hide();
-
+    document.getElementById('searchForm').addEventListener('submit', function(e) {
+        document.getElementById("recipe-button").click();
+        e.preventDefault(); 
+    }, false);
 });
 $('#recipe-button').on('click', function(){
     mainCourse=$("#searchFoodInput").val(); 

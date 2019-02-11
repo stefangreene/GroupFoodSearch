@@ -163,7 +163,7 @@ div#search-bar{
 
 /*......image scrollbox......*/
 #picture-col{
-    background-color: white;
+    background-color: transparent;
     width: 74%; 
     border-radius: 5px;
     min-height: 290px !important;
@@ -225,7 +225,10 @@ div#scrollmenu {
     cursor: pointer;
 }
 
+#picture-boxes{
+    
 
+}
 
 
 /*.....yummly search cards scrollbox.....*/
@@ -255,6 +258,14 @@ p.title-search{
     box-shadow: 2px 2px 4px rgb(208, 208, 208);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    font-size: 13pt;
 }
 
 
@@ -279,7 +290,7 @@ p.title-search{
 
 /*....Recipe result box....*/
 #result-col{
-    background-color: rgb(255, 244, 235);
+    background: transparent;
     width: 100%; 
     border-radius: 5px;
     min-height: 425px !important;
@@ -309,7 +320,18 @@ p.title-search{
     text-align: center;
     font-family: Bradley Hand, cursive;
     font-weight: bold;
-    
+}
+#jk{
+    color: #e7eeed;
+    text-align: center;
+    font-family: Bradley Hand, cursive;
+    font-weight: bold;  
+}
+#t{
+    color: #e7eeed;
+    text-align: center;
+    font-family: Bradley Hand, cursive;
+    font-weight: bold;  
 }
 .joke-text{
     font-size: 20px;
