@@ -1,5 +1,6 @@
 //YUMMLY ID variables....................................
 var mainCourse = '';
+var AllowedCourse='';
 var chooseDiet = '';
 var addIngredient = '';
 var excludeIngredient = '';
@@ -23,9 +24,23 @@ $( document ).ready(function() {
     ourTrivia()
 });
 $('#recipe-button').on('click', function(){
-    mainCourse=$("#searchFoodInput").val(); 
-    chooseDiet=$(".multiSel1").text();  
-    chooseDiet= chooseDiet.substring(0, chooseDiet.length - 1);                          
+    mainCourse=$("#searchFoodInput").val(); console.log("mainCourse",mainCourse )
+    Cuisine=$(".multiSel1").text();  
+    Cuisine= Cuisine.substring(0, Cuisine.length - 1); 
+    console.log("cuisine",Cuisine )
+    //chooseDiet=$(".multiSel2").text();  
+    AllowedCourse=$(".multiSel3").text(); 
+    AllowedCourse= AllowedCourse.substring(0, AllowedCourse.length - 1); 
+    console.log("AllowedCourse",AllowedCourse )
+    Allergy=$(".multiSel4").text();  
+    Allergy= Allergy.substring(0, Allergy.length - 1);
+     console.log("allergy",Allergy )
+    excludeIngredient=$(".multiSel5").text(); 
+  //  excludeIngredient= excludeIngredient.substring(0, excludeIngredient.length - 1);
+    console.log("excludeIngredient",excludeIngredient );
+    chooseDiet=$(".multiSel6").text(); 
+    chooseDiet= chooseDiet.substring(0, chooseDiet.length - 1);
+    console.log("chooseDiet",chooseDiet )                              
       $("#trivia-header").html("");
       $("#joke-header").html("");   
       yummlyRecipe();
@@ -37,7 +52,11 @@ $('#recipe-button').on('click', function(){
 
 $("#button-clear").click(function() {
 $(".input-checkbox").prop("checked", false);
-$(".multiSel").html(''); 
+$(".multiSel1").html(''); 
+$(".multiSel2").html(''); 
+$(".multiSel3").html(''); 
+$(".multiSel4").html(''); 
+$(".multiSel5").html(''); 
 });
 
 
@@ -89,7 +108,7 @@ function yummlyRecipe(callData){
 
 $.ajax({
     type: 'GET',
-    url: 'http://api.yummly.com/v1/api/recipes?_app_id='+appID+'&_app_key='+apiKey+'&q='+mainCourse+'&excludeIngredient[]='+excludeIngredient+addIngredient+'&allowedDiet[]='+chooseDiet+'&allowedAllergy[]='+Allergy+'&allowedCuisine[]='+Cuisine+'&maxResult=20&start=10&requirePictures=true',
+    url: 'http://api.yummly.com/v1/api/recipes?_app_id='+appID+'&_app_key='+apiKey+'&q='+mainCourse+AllowedCourse +'&excludeIngredient[]='+excludeIngredient+chooseDiet+Allergy+Cuisine+'&maxResult=20&start=10&requirePictures=true',
 
 
     }).done(function (results) {
@@ -268,14 +287,16 @@ function yummlyRecipe2(RecipeIdPar){
                            if(typeof(SweetAmount)== 'undefined'){
                             SweetAmount=0;
                            }
-                    
+                           document.getElementById('cns-status-box-number').innerHTML="No Data";
+                           document.getElementById('cns-status-box-number2').innerHTML="No Data";
                         var nutritionEstimateLength=resultRecipe.nutritionEstimates.length;    
                         for(var k=0;k<nutritionEstimateLength; k++){
                             var NutritionEstimate=resultRecipe.nutritionEstimates[k].attribute;
                         switch(NutritionEstimate) {
                             case 'FAT_KCAL':                              
-                           // document.getElementById('cns-status-box-number').innerHTML=resultRecipe.nutritionEstimates[k].value;
-                             break;
+                           document.getElementById('cns-status-box-number').innerHTML=resultRecipe.nutritionEstimates[k].value;
+                             var FatKal=resultRecipe.nutritionEstimates[k].value;
+                           break;
                              case "K":                              
                            NutritionEstimateArray[0]=resultRecipe.nutritionEstimates[k].value;                              
                              break;
@@ -319,11 +340,16 @@ function yummlyRecipe2(RecipeIdPar){
                            NutritionEstimateArray[13]=resultRecipe.nutritionEstimates[k].value;
                              break;
                             case  "ENERC_KCAL":   
-                            // document.getElementById('cns-status-box-number').innerHTML=resultRecipe.nutritionEstimates[k].value;
+                             document.getElementById('cns-status-box-number2').innerHTML=resultRecipe.nutritionEstimates[k].value;
                             break;
                              
                            default:
-                              // code block
+                           //if(FatKal=='undefiend'){ alert();
+                            if(FatKal=='undefiend'){ alert();
+                            document.getElementById('cns-status-box-number').innerHTML="Data unavailable";
+                           }
+                           //document.getElementById('cns-status-box-number').innerHTML=resultRecipe.nutritionEstimates[k].value;
+                           //var FatKal=resultRecipe.nutritionEstimates[k].value;
                           }
                
 
