@@ -18,6 +18,9 @@ $( document ).ready(function() {
         document.getElementById("recipe-button").click();
         e.preventDefault(); 
     }, false);
+    yummlyRecipe();
+    ourJoke();
+    ourTrivia()
 });
 $('#recipe-button').on('click', function(){
     mainCourse=$("#searchFoodInput").val(); 
@@ -107,7 +110,8 @@ $.ajax({
                 //create div for single reutrn item.
                 var searchResults = $("<div>");
                 //create <p> tag for returnTitles.
-                var p = $("<p>")   
+                
+                var p = $("<p>");   
                 p.addClass("title-search");
                     if (returnTitle.length > 30) {
                         returnTitle = returnTitle.substring(0, 29)+"...";
@@ -197,24 +201,58 @@ function yummlyRecipe2(RecipeIdPar){
                         $("#RecipeTitle").html('');
                            var resultRecipeLength=resultRecipe.ingredientLines.length; 
                            //console.log(resultRecipeLength);
-                           var recipeTitleP=$("<h1>");
-                           var recipeTitleName=resultRecipe.name;
-                               recipeTitleP.append(recipeTitleName); 
-                               recipeTitleP.append(recipeTitleP);
-                               $("#RecipeTitle").append(recipeTitleP);
-                               
-
+                             var recipeTitleP=$("<h1>");
+                             var recipeTitleName=resultRecipe.name;
+                             recipeTitleP.append(recipeTitleName); 
+                             recipeTitleP.append(recipeTitleP);
+                             $("#RecipeTitle").append(recipeTitleP);
+                             var SourceLink=$("<div>");
+                             SourceLink.append("Source and Direction:");
+                             var SourceALink=$("<a>");
+                             SourceALink.attr("href",resultRecipe.source.sourceRecipeUrl);
+                             var SourceALink = $("<a/>", {
+                                class : "id5",
+                                name : "link",
+                                href : resultRecipe.source.sourceRecipeUrl,
+                                text :  resultRecipe.source.sourceDisplayName
+                            });
+                               SourceLink.append(SourceALink);
+                              
                            var orderedList = $("<ol>");
                           for(var i=0;i<resultRecipeLength; i++){
                               var orderedListItem = $("<li>");
                                orderedListItem.append(resultRecipe.ingredientLines[i]); 
                                orderedList.append(orderedListItem);
-                               $("#picture-boxes-Recipe").append(orderedList);
-                                   
+                               $("#picture-boxes-Recipe").append(orderedList);                                                                 
                           }   
                           $("#picture-boxes-Recipe").prepend('<h1> Ingredients</h1>');    
-                   
-                
+                          $("#picture-boxes-Recipe").append(SourceLink);
+                          var FlavorsLength=resultRecipe.flavors;
+                         // BitterAmount', 'MeatyAmount', 'PiquantAmount', 'SaltyAmount', 'SourAmount','SweetAmount'
+                           var BitterAmount=resultRecipe.flavors.Bitter;                           
+                           if(typeof(Bitter)== 'undefined'){
+                            BitterAmount=0;
+                           }
+                           var MeatyAmount=resultRecipe.flavors.Meaty;                           
+                           if(typeof(MeatyAmount)== 'undefined'){
+                            MeatyAmount=0;
+                           }
+                           var PiquantAmount=resultRecipe.flavors.Piquant;                           
+                           if(typeof(PiquantAmount)== 'undefined'){
+                            PiquantAmount=0;
+                           }
+                           var SaltyAmount=resultRecipe.flavors.Salty;                           
+                           if(typeof(SaltyAmount)== 'undefined'){
+                            SaltyAmount=0;
+                           }
+                           var SourAmount=resultRecipe.flavors.Sour;                           
+                           if(typeof(SourAmount)== 'undefined'){
+                            SourAmount=0;
+                           }                   
+                           var SweetAmount=resultRecipe.flavors.Sweet;                           
+                           if(typeof(SweetAmount)== 'undefined'){
+                            SweetAmount=0;
+                           }
                     
                         var nutritionEstimateLength=resultRecipe.nutritionEstimates.length;    
                         for(var k=0;k<nutritionEstimateLength; k++){
@@ -278,7 +316,8 @@ function yummlyRecipe2(RecipeIdPar){
                           }
                
 
-                         }        drawchart(recipeTitleName);      
+                         }        drawchart(recipeTitleName);  
+                         FlavorChart(BitterAmount, MeatyAmount, PiquantAmount, SaltyAmount, SourAmount,SweetAmount);    
                     
                          
                 });
@@ -388,3 +427,64 @@ Highcharts.chart('container', {
  }
 
 
+function FlavorChart(BitterAmount,MeatyAmount,PiquantAmount,SaltyAmount,SourAmount,SweetAmount){
+
+
+    Highcharts.chart('Flavors-chart', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Flavor min 0 and Max 1'
+        },
+        subtitle: {
+            text: 'Source: <a href="https://www.yummly.com/">Yummly</a>'
+        },
+        xAxis: {
+            categories: ['Bitter', 'Meaty', 'Piquant', 'Salty', 'Sour','Sweet'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Flavor min 0 and Max 1',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' unit'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Flavor ',
+             data: [BitterAmount, MeatyAmount, PiquantAmount, SaltyAmount, SourAmount,SweetAmount]
+        }]
+    });
+
+
+}
