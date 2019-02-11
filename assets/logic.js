@@ -216,58 +216,58 @@ function yummlyRecipe2(RecipeIdPar){
                         for(var k=0;k<nutritionEstimateLength; k++){
                             var NutritionEstimate=resultRecipe.nutritionEstimates[k].attribute;
                         switch(NutritionEstimate) {
-                            case 'FAT_KCAL':
-                             // console.log(resultRecipe.nutritionEstimates[k].value);
+                              case 'FAT_KCAL':
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
                               NutritionEstimateArray[0]=resultRecipe.nutritionEstimates[k].value;
                               break;
-                            case "K":
-                           // console.log(resultRecipe.nutritionEstimates[k].value);
+                              case "K":
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[1]=resultRecipe.nutritionEstimates[k].value;
                               // code block
                               break;
                               case "FASAT":
                               // code block
-                              NutritionEstimateArray[2]=resultRecipe.nutritionEstimates[k].value;
+                            NutritionEstimateArray[2]=resultRecipe.nutritionEstimates[k].value;
                               break;
                               case 'STARCH':
                               //console.log(resultRecipe.nutritionEstimates[k].value);
-                              NutritionEstimateArray[3]=resultRecipe.nutritionEstimates[k].value;
+                            NutritionEstimateArray[3]=resultRecipe.nutritionEstimates[k].value;
                               break;
-                            case "GLUS":
-                           // console.log(resultRecipe.nutritionEstimates[k].value);
+                              case "GLUS":
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[4]=resultRecipe.nutritionEstimates[k].value;
                               // code block
                               break;
                               case 'FE':
-                             // console.log(resultRecipe.nutritionEstimates[k].value);
-                              NutritionEstimateArray[5]=resultRecipe.nutritionEstimates[k].value;
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
+                            NutritionEstimateArray[5]=resultRecipe.nutritionEstimates[k].value;
                               break;
-                            case "TOCPHA":
-                           // console.log(resultRecipe.nutritionEstimates[k].value);
+                              case "TOCPHA":
+                              // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[6]=resultRecipe.nutritionEstimates[k].value;
                               // code block
                               break;
                               case "FAMS":
                               // code block
-                              NutritionEstimateArray[7]=resultRecipe.nutritionEstimates[k].value;
+                            NutritionEstimateArray[7]=resultRecipe.nutritionEstimates[k].value;
                               break;
                               case 'CHOCDF':
                               //console.log(resultRecipe.nutritionEstimates[k].value);
-                              NutritionEstimateArray[8]=resultRecipe.nutritionEstimates[k].value;
+                            NutritionEstimateArray[8]=resultRecipe.nutritionEstimates[k].value;
                               break;
                               case "VITK":
                               // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[9]=resultRecipe.nutritionEstimates[k].value;
                                 // code block
-                               break;
-                               case "CA":
+                              break;
+                              case "CA":
                                  // code block
-                                NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
-                                 break;
-                                 case 'MG':
+                            NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
+                              break;
+                              case 'MG':
                                  //console.log(resultRecipe.nutritionEstimates[k].value);
-                                 NutritionEstimateArray[11]=resultRecipe.nutritionEstimates[k].value;
-                                 break;
+                            NutritionEstimateArray[11]=resultRecipe.nutritionEstimates[k].value;
+                              break;
                               
                             default:
                               // code block
