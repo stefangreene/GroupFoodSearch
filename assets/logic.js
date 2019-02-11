@@ -131,7 +131,7 @@ $.ajax({
                     searchResults.append(anchorTagImage);
                     searchResults.append(textAnchorTag);
                      $("#picture-boxes").prepend(searchResults); 
-    }
+}
 
 
 
@@ -241,7 +241,7 @@ function yummlyRecipe2(RecipeIdPar){
                               // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[4]=resultRecipe.nutritionEstimates[k].value;
                               // code block
-                              break;
+                           /*   break;
                               case 'FE':
                               // console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[5]=resultRecipe.nutritionEstimates[k].value;
@@ -272,7 +272,7 @@ function yummlyRecipe2(RecipeIdPar){
                                  //console.log(resultRecipe.nutritionEstimates[k].value);
                             NutritionEstimateArray[11]=resultRecipe.nutritionEstimates[k].value;
                               break;
-                              
+                              */
                             default:
                               // code block
                           }
@@ -387,5 +387,4 @@ Highcharts.chart('container', {
 });
  }
 
-        //CHANGE FOR GIT
 
