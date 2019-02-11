@@ -1107,6 +1107,7 @@ tspan{
         margin-left:5%;  
         position: fixed;
         z-index: 5;
+        display: none;
     }
     .dropdown{
         width: 95%;
@@ -1115,6 +1116,7 @@ tspan{
         margin-left:5%;
         margin-top: 8px;
         z-index: 5;
+        display: none;
     }
     #dropdownMenuButton{
         padding-top: 10px;
@@ -1126,24 +1128,29 @@ tspan{
         color: rgb(255, 255, 255);
         background-color: rgb(170, 135, 92);
         font-size: 17px;
+        display: none;
     }
     .dropdown-menu {
         min-width: 120% !important;
         border: 1px solid black;
         font-size: 20px;
         border:1px solid black !important;
+        display: none;
      }
     .dropdown-menu ul{
         padding-left:10px !important;
+        display: none;
         
      }
     .dropdown-item{
         font-size: 20px;
+        display: none;
     }
     .multiSelect input[type="checkbox"]{
         size: 20px !important;
         margin: 0 10px 0 0;
         text-align: left !important;
+        display: none;
         
     }
     
@@ -1378,8 +1385,8 @@ tspan{
     #joke-card{
         border: 3px solid black;
         border-radius: 5px;
-        margin-top: 10%;
-        margin-left: 8%; 
+        margin-top: 110%;
+        margin-left: -3%; 
         min-height: 360px;
         width: 200px;
         float: left;
@@ -1407,8 +1414,8 @@ tspan{
     #trivia-card{
         border: 3px solid black;
         border-radius: 5px;
-        margin-top: 7%;
-        margin-left: 1%; 
+        margin-top: 5.5%;
+        margin-left: 48%; 
         min-height: 360px;
         width: 200px;
         float: left;
@@ -1437,21 +1444,19 @@ tspan{
     
         color:rgb(255, 119, 0);
         z-index: 1;
-        margin-top: 40%;
+        margin-top: 120%;
     }
     /*.......Form......*/
     #newContact{
         font-family: 'Staatliches', cursive;
-        font-size: 26px;
+        font-size: 10px;
         color:rgb(255, 119, 0);
         z-index: 1;
         position: absolute;
-        margin-top: 100%;
-        width: 100%;
-        margin-top: 10%;
-        width: 70%;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-top: 90%;
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 4%;
     
     }
     #name{
