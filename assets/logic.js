@@ -10,7 +10,7 @@ var apiKey = 'dd23675598c15c270213370a7b95f878';
 var Calories=[];
 var Potassium=[];
 var SaturatedFat=[];
-var NutritionEstimateArray=[0,0,0,0,0,0,0,0,0,0,0]
+var NutritionEstimateArray=[0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 $( document ).ready(function() {
     //$('.IngredientShow').hide();
@@ -207,15 +207,27 @@ function yummlyRecipe2(RecipeIdPar){
                              recipeTitleP.append(recipeTitleP);
                              $("#RecipeTitle").append(recipeTitleP);
                              var SourceLink=$("<div>");
-                             SourceLink.append("Source and Direction:");
-                             var SourceALink=$("<a>");
-                             SourceALink.attr("href",resultRecipe.source.sourceRecipeUrl);
+                             SourceLink.append("<b>Source and Direction:</b>");
+                            // var SourceALink=$("<a>");
+                            // SourceALink.attr("href",resultRecipe.source.sourceRecipeUrl);
                              var SourceALink = $("<a/>", {
                                 class : "id5",
                                 name : "link",
                                 href : resultRecipe.source.sourceRecipeUrl,
                                 text :  resultRecipe.source.sourceDisplayName
                             });
+                            var NumberOfServingDiv=$("<div>");
+                            var NumberServing=resultRecipe.numberOfServings;
+                            NumberOfServingDiv.append("<b>Number of Servings:</b> ");
+                            NumberOfServingDiv.append(NumberServing);
+                            var TimeToCookDiv=$("<div>");
+                            var TimeToCook=resultRecipe.totalTime;                            
+                            TimeToCookDiv.append("<b>Time to cook:</b> ");
+                            TimeToCookDiv.append(TimeToCook);
+
+                            
+                           SourceALink.attr('target',"_blank");
+                            //target="_blank",
                                SourceLink.append(SourceALink);
                               
                            var orderedList = $("<ol>");
@@ -225,10 +237,13 @@ function yummlyRecipe2(RecipeIdPar){
                                orderedList.append(orderedListItem);
                                $("#picture-boxes-Recipe").append(orderedList);                                                                 
                           }   
-                          $("#picture-boxes-Recipe").prepend('<h1> Ingredients</h1>');    
+                          $("#picture-boxes-Recipe").prepend('<h1> Ingredients</h1>');                   
+                          $("#picture-boxes-Recipe").append(NumberOfServingDiv);
+                          $("#picture-boxes-Recipe").append(TimeToCookDiv);
                           $("#picture-boxes-Recipe").append(SourceLink);
+                        
+
                           var FlavorsLength=resultRecipe.flavors;
-                         // BitterAmount', 'MeatyAmount', 'PiquantAmount', 'SaltyAmount', 'SourAmount','SweetAmount'
                            var BitterAmount=resultRecipe.flavors.Bitter;                           
                            if(typeof(Bitter)== 'undefined'){
                             BitterAmount=0;
@@ -258,60 +273,56 @@ function yummlyRecipe2(RecipeIdPar){
                         for(var k=0;k<nutritionEstimateLength; k++){
                             var NutritionEstimate=resultRecipe.nutritionEstimates[k].attribute;
                         switch(NutritionEstimate) {
-                              case 'FAT_KCAL':
-                              // console.log(resultRecipe.nutritionEstimates[k].value);
-                              NutritionEstimateArray[0]=resultRecipe.nutritionEstimates[k].value;
-                              break;
-                              case "K":
-                              // console.log(resultRecipe.nutritionEstimates[k].value);
-                            NutritionEstimateArray[1]=resultRecipe.nutritionEstimates[k].value;
-                              // code block
-                              break;
-                              case "FASAT":
-                              // code block
-                            NutritionEstimateArray[2]=resultRecipe.nutritionEstimates[k].value;
-                              break;
-                              case 'STARCH':
-                              //console.log(resultRecipe.nutritionEstimates[k].value);
-                            NutritionEstimateArray[3]=resultRecipe.nutritionEstimates[k].value;
-                              break;
-                              case "GLUS":
-                              // console.log(resultRecipe.nutritionEstimates[k].value);
-                            NutritionEstimateArray[4]=resultRecipe.nutritionEstimates[k].value;
-                              // code block
-                           /*   break;
-                              case 'FE':
-                              // console.log(resultRecipe.nutritionEstimates[k].value);
-                            NutritionEstimateArray[5]=resultRecipe.nutritionEstimates[k].value;
-                              break;
-                              case "TOCPHA":
-                              // console.log(resultRecipe.nutritionEstimates[k].value);
-                            NutritionEstimateArray[6]=resultRecipe.nutritionEstimates[k].value;
-                              // code block
-                              break;
-                              case "FAMS":
-                              // code block
-                            NutritionEstimateArray[7]=resultRecipe.nutritionEstimates[k].value;
-                              break;
-                              case 'CHOCDF':
-                              //console.log(resultRecipe.nutritionEstimates[k].value);
-                            NutritionEstimateArray[8]=resultRecipe.nutritionEstimates[k].value;
-                              break;
-                              case "VITK":
-                              // console.log(resultRecipe.nutritionEstimates[k].value);
-                            NutritionEstimateArray[9]=resultRecipe.nutritionEstimates[k].value;
-                                // code block
-                              break;
-                              case "CA":
-                                 // code block
-                            NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
-                              break;
-                              case 'MG':
-                                 //console.log(resultRecipe.nutritionEstimates[k].value);
-                            NutritionEstimateArray[11]=resultRecipe.nutritionEstimates[k].value;
-                              break;
-                              */
-                            default:
+                            case 'FAT_KCAL':                              
+                           // document.getElementById('cns-status-box-number').innerHTML=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                             case "K":                              
+                           NutritionEstimateArray[0]=resultRecipe.nutritionEstimates[k].value;                              
+                             break;
+                          case "FASAT":                              
+                           NutritionEstimateArray[1]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                             case 'STARCH':                              
+                           NutritionEstimateArray[2]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                             case "GLUS":                              
+                           NutritionEstimateArray[3]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                             case 'FE':                              
+                           NutritionEstimateArray[4]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                             case "TOCPHA":                              
+                           NutritionEstimateArray[5]=resultRecipe.nutritionEstimates[k].value;                              
+                             break;
+                             case "FAMS":                              
+                           NutritionEstimateArray[6]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                             case 'CHOCDF':                              
+                           NutritionEstimateArray[7]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                             case "VITK":                             
+                           NutritionEstimateArray[8]=resultRecipe.nutritionEstimates[k].value;                                
+                             break;
+                             case "CA":                                 
+                           NutritionEstimateArray[9]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                             case 'MG':                                 
+                           NutritionEstimateArray[10]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                           case 'SUGAR':                                 
+                           NutritionEstimateArray[11]=resultRecipe.nutritionEstimates[k].value;
+                             break; 
+                           case 'PROCNT':                               
+                           NutritionEstimateArray[12]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                           case  "CHOLE":                                 
+                           NutritionEstimateArray[13]=resultRecipe.nutritionEstimates[k].value;
+                             break;
+                            case  "ENERC_KCAL":   
+                            // document.getElementById('cns-status-box-number').innerHTML=resultRecipe.nutritionEstimates[k].value;
+                            break;
+                             
+                           default:
                               // code block
                           }
                
@@ -400,25 +411,61 @@ Highcharts.chart('container', {
             "colorByPoint": true,
             "data": [
                 {
-                    "name": "Fat Cal",
+                    "name": "Potassium",
                     "y": NutritionEstimateArray[0]
                 },
                 {
-                    "name": "K",
+                    "name": "Saturated Fat",
                     "y": NutritionEstimateArray[1]
                 },
                 {
-                    "name": "Saturated Fat",
+                    "name": "Starch",
                     "y": NutritionEstimateArray[2]
                 },
                 {
-                    "name": "Starch",
+                    "name": "Glucose",
                     "y": NutritionEstimateArray[3]
                 },
                 {
-                    "name": "Glucose",
+                    "name": "Iron",
                     "y": NutritionEstimateArray[4]
-                }
+                },
+                {
+                    "name": "Vitamin E",
+                    "y": NutritionEstimateArray[5]
+                },
+                {
+                    "name": "Fatty acids",
+                    "y": NutritionEstimateArray[6]
+                },
+                {
+                    "name": "Carbohydrate",
+                    "y": NutritionEstimateArray[7]
+                },
+                {
+                    "name": "Vitamin K",
+                    "y": NutritionEstimateArray[8]
+                },
+                 {
+                    "name": "Calcium",
+                    "y": NutritionEstimateArray[9]
+                },
+                {
+                    "name": "Magnisium",
+                    "y": NutritionEstimateArray[10]
+                },
+                {
+                    "name": "Sugar",
+                    "y": NutritionEstimateArray[11]
+                },
+                {
+                    "name": "Protein",
+                    "y": NutritionEstimateArray[12]
+                },
+                {
+                    "name": "Cholesterol",
+                    "y": NutritionEstimateArray[13]
+                } 
                 
             ]
         }
