@@ -1,5 +1,5 @@
 
-@media (min-width:1401px) and (max-width: 2000px) {
+
 
 /*background image*/
 #backgrounIMG-box{
@@ -10,7 +10,7 @@
     position: absolute;
     width: 95%;
     height: auto;
-    z-index: 1;
+    z-index: -1;
 }
 
 /*......Header style.....*/
@@ -194,7 +194,7 @@ div#search-bar{
     border: 2px solid black;
     box-shadow: 4px 4px 6px rgb(156, 116, 67);
     position: relative;
-    margin-top: 10%;
+    margin-top: 25%;
     margin-left:9%;
     z-index: 1;
 } 
@@ -496,9 +496,6 @@ tspan{
     box-shadow: none; 
     border: none;
 }
-}
-
-
 @media (min-width:701px) and (max-width: 1400px) {
 
     /*background image*/
@@ -526,8 +523,8 @@ tspan{
     }
     .display-3{
         font-family: 'Staatliches', cursive;
-        font-size: 100px;
-        line-height: 38px; 
+        font-size: 60px;
+        line-height: 50px; 
         text-shadow: 2px 2px 4px rgb(114, 114, 114); 
         color: white;
         width: 60%;
@@ -553,12 +550,12 @@ tspan{
         font-family: 'Staatliches', cursive;
         font-weight: bold;
         box-shadow: 2px 2px 5px rgb(84, 84, 84);
-        font-size: 22px;
+        font-size: 15px;
         border: 1px solid rgb(255, 119, 0);
         height: 50px;
-        width: 100%;
-        margin-top: 20px;
-        z-index: 5;
+        width: 200px;
+        z-index: 10;
+        margin-top: 4px;
     }
     #recipe-button{
         color: rgb(62, 62, 62);
@@ -566,20 +563,24 @@ tspan{
         border: 1px solid rgb(69, 245, 41);
         box-shadow: 2px 2px 5px rgb(84, 84, 84);
         font-family: 'Staatliches', cursive;
-        font-size: 22px;
+        font-size: 15px;
         margin-top: 20px;
-        width: 100%;
+        width: 110px;
         height: 50px;
+        z-index: 10;
+        
     }
     #button-clear{
         background-color: rgb(255, 119, 0);
         border: 1px solid rgb(255, 119, 0);
         font-family: 'Staatliches', cursive;
         box-shadow: 2px 2px 5px rgb(92, 92, 92);
-        width: 100%;
-        font-size: 22px;
-        margin-top: 20px;
+        width: 110px;
+        font-size: 15px;
+        margin-top: 0px;
         height:50px;
+        z-index: 10;
+       
     }
     #yummly-tag{
         width: 200px;
@@ -590,6 +591,7 @@ tspan{
         color: rgb(62, 62, 62);
         background-color: white;
         height:50px;
+        z-index: 10;
     }
     #small-yum{
         width: 60px;
@@ -602,13 +604,14 @@ tspan{
     
     
     /*....Code for dropdown...*/
-    #menu-background{
+     #menu-background{
         background-color: rgb(170, 135, 92);
-        width: 40%;
-        margin-top: 70px;
-        margin-left:10%;  
+        width: 100%;
+        margin-top: 50px;
+        margin-left:-10%;  
         position: fixed;
         z-index: 5;
+        display: none;
     }
     .dropdown{
         width: 40%;
@@ -617,6 +620,7 @@ tspan{
         margin-left:1%;
         margin-top: 60px;
         z-index: 5;
+        display: none;
     }
     #dropdownMenuButton{
         padding-top: 10px;
@@ -624,28 +628,33 @@ tspan{
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
-        width: 100%;
         color: rgb(255, 255, 255);
         background-color: rgb(170, 135, 92);
-        font-size: 26px;
+        font-size: 15px;
+        display: inline;
+        display: none;
     }
     .dropdown-menu {
         min-width: 120% !important;
         border: 1px solid black;
         font-size: 20px;
         border:1px solid black !important;
+        display: none;
      }
     .dropdown-menu ul{
         padding-left:20px !important;
+        display: none;
         
      }
     .dropdown-item{
         font-size: 20px;
+        display: none;
     }
     .multiSelect input[type="checkbox"]{
         size: 20px !important;
         margin: 0 10px 0 0;
         text-align: left !important;
+        display: none;
         
     }
     
@@ -679,7 +688,7 @@ tspan{
     
     
     
-    
+     */
     /*......image scrollbox......*/
     #picture-col{
         background-color: transparent;
@@ -880,8 +889,7 @@ tspan{
     #joke-card{
         border: 3px solid black;
         border-radius: 5px;
-        margin-top: 10%;
-        margin-left: 8%; 
+        margin-left: 0%; 
         min-height: 360px;
         width: 200px;
         float: left;
@@ -891,6 +899,7 @@ tspan{
         border-radius: 10px;
         position: absolute;
         z-index: 2;
+        margin-top: 70%;
     }
     #trivia{
         background-color: rgba(0,0,0,0.5);
@@ -909,8 +918,7 @@ tspan{
     #trivia-card{
         border: 3px solid black;
         border-radius: 5px;
-        margin-top: 7%;
-        margin-left: 1%; 
+        margin-left: 70%; 
         min-height: 360px;
         width: 200px;
         float: left;
@@ -920,6 +928,7 @@ tspan{
         border-radius: 10px;
         position: absolute;
         z-index: 2;
+        margin-top: 5%;
     }
     
     
@@ -927,19 +936,19 @@ tspan{
     
     .footer {
         position: absolute;
-        width: 100%;
+        width: 105%;
         height: 60px;
-        line-height: 60px;
+        line-height: 30px;
         background: none;
         text-align: center;
         font-family: 'Staatliches', cursive;
-        font-size: 26px;
+        font-size: 15px;
         color: white;
         z-index: 2;
     
         color:rgb(255, 119, 0);
         z-index: 1;
-        margin-top: 40%;
+        margin-top: 100%;
     }
     /*.......Form......*/
     #newContact{
@@ -950,10 +959,9 @@ tspan{
         position: absolute;
         margin-top: 100%;
         width: 100%;
-        margin-top: 10%;
-        width: 70%;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-top: 60%;
+        margin-left: 8%;
+        margin-right: 8%;
     
     }
     #name{
@@ -1126,7 +1134,7 @@ tspan{
         border:1px solid black !important;
      }
     .dropdown-menu ul{
-        padding-left:20px !important;
+        padding-left:10px !important;
         
      }
     .dropdown-item{
@@ -1478,17 +1486,15 @@ tspan{
     }
     }
     
-    
-    
-    
-    
-    
-    
+
     /*...Chart....*/
     #container {
         position: absolute;
         z-index: 10;
     }
+
+
+
 
 
 
