@@ -1,5 +1,5 @@
 
-
+@media (min-width:1401px) and (max-width: 2000px) {
 
 /*background image*/
 #backgrounIMG-box{
@@ -10,7 +10,7 @@
     position: absolute;
     width: 95%;
     height: auto;
-    z-index: -1;
+    z-index: 1;
 }
 
 /*......Header style.....*/
@@ -26,8 +26,8 @@ div#header{
 }
 .display-3{
     font-family: 'Staatliches', cursive;
-    font-size: 70px;
-    line-height: 50px;
+    font-size: 145px;
+    line-height: 108px; 
     text-shadow: 2px 2px 4px rgb(114, 114, 114); 
     color: white;
     width: 100%;
@@ -49,7 +49,7 @@ div#search-bar{
     top: 0;
 }
 #searchFoodInput{
-     font-family: 'Staatliches', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     box-shadow: 2px 2px 5px rgb(84, 84, 84);
@@ -114,20 +114,20 @@ div#search-bar{
     width: 95%;
     float: right;
     position: fixed;
-    margin-left:0%;
+    margin-left:5%;
     margin-top: 8px;
     z-index: 5;
 }
 #dropdownMenuButton{
     padding-top: 10px;
-    font-family: 'Staatliches', cursive;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    width: 100%;
     color: rgb(255, 255, 255);
     background-color: rgb(170, 135, 92);
     font-size: 26px;
-    margin-left: -250px;
-    margin-right: 0px;  
-
 }
 .dropdown-menu {
     min-width: 120% !important;
@@ -146,7 +146,6 @@ div#search-bar{
     size: 20px !important;
     margin: 0 10px 0 0;
     text-align: left !important;
-
     
 }
 
@@ -158,7 +157,7 @@ div#search-bar{
 .mutliSelect6 ul{
     list-style: none;
     font-size: 20px;
-    font-family: 'Staatliches', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .mutliSelect input,
@@ -182,10 +181,6 @@ div#search-bar{
 
 
 /*......image scrollbox......*/
-#picture-boxes-Recipe{
-    font-family: 'Staatliches', cursive;
-    
-}
 #picture-col{
     background-color: transparent;
     width: 79.5%; 
@@ -194,7 +189,7 @@ div#search-bar{
     border: 2px solid black;
     box-shadow: 4px 4px 6px rgb(156, 116, 67);
     position: relative;
-    margin-top: 25%;
+    margin-top: 10%;
     margin-left:9%;
     z-index: 1;
 } 
@@ -276,13 +271,14 @@ p.title-search{
     margin: 0 5px 10px 5px;
     border-radius: 0 0 10px 10px;
     box-shadow: 2px 2px 4px rgb(208, 208, 208);
-    font-family: 'Staatliches', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     vertical-align: middle;
     text-align: center;
+    font-family: Courier, monospace;
     font-weight: bold;
     font-size: 13pt;
     background-color: #bc987e;
@@ -340,18 +336,15 @@ p.title-search{
     box-align: top;
     min-height: 100px !important;
     width: 100%;
-    font-family: 'Staatliches', cursive;
+    font-family: Bradley Hand, cursive;
 }
 #picture-boxes-Recipe{
-    font-family: 'Staatliches', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(110, 110, 110);
     font-size: 18px;
 }
 #tastes-chart{
     border: 6px solid black;
-}
-tspan{
-    font-family: 'Staatliches', cursive;
 }
 
 
@@ -368,19 +361,19 @@ tspan{
 #joke-header{
     color: #e7eeed;
     text-align: center;
-  font-family: 'Staatliches', cursive;
+    font-family: Bradley Hand, cursive;
     font-weight: bold;
 }
 #jk{
     color: #e7eeed;
     text-align: center;
-      font-family: 'Staatliches', cursive;
+    font-family: Bradley Hand, cursive;
     font-weight: bold;  
 }
 #t{
     color: #e7eeed;
     text-align: center;
-      font-family: 'Staatliches', cursive;
+    font-family: Bradley Hand, cursive;
     font-weight: bold;  
 }
 .joke-text{
@@ -408,7 +401,7 @@ tspan{
 #trivia-header{
     color: #e7eeed;
     text-align: center;
-    font-family: 'Staatliches', cursive;
+    font-family: Bradley Hand, cursive;
     font-weight: bold;
 }
 .trivia-text{
@@ -458,7 +451,7 @@ tspan{
     color:rgb(255, 119, 0);
     z-index: 1;
     position: absolute;
-    margin-top: 19%;
+    margin-top: 100%;
     width: 100%;
     margin-top: 10%;
     width: 70%;
@@ -496,6 +489,9 @@ tspan{
     box-shadow: none; 
     border: none;
 }
+}
+
+
 @media (min-width:701px) and (max-width: 1400px) {
 
     /*background image*/
@@ -523,8 +519,8 @@ tspan{
     }
     .display-3{
         font-family: 'Staatliches', cursive;
-        font-size: 60px;
-        line-height: 50px; 
+        font-size: 100px;
+        line-height: 38px; 
         text-shadow: 2px 2px 4px rgb(114, 114, 114); 
         color: white;
         width: 60%;
@@ -547,15 +543,16 @@ tspan{
         top: 0;
     }
     #searchFoodInput{
-        font-family: 'Staatliches', cursive;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
         font-weight: bold;
         box-shadow: 2px 2px 5px rgb(84, 84, 84);
-        font-size: 15px;
+        font-size: 22px;
         border: 1px solid rgb(255, 119, 0);
         height: 50px;
-        width: 200px;
-        z-index: 10;
-        margin-top: 4px;
+        width: 100%;
+        margin-top: 20px;
+        z-index: 5;
     }
     #recipe-button{
         color: rgb(62, 62, 62);
@@ -563,24 +560,20 @@ tspan{
         border: 1px solid rgb(69, 245, 41);
         box-shadow: 2px 2px 5px rgb(84, 84, 84);
         font-family: 'Staatliches', cursive;
-        font-size: 15px;
+        font-size: 22px;
         margin-top: 20px;
-        width: 110px;
+        width: 100%;
         height: 50px;
-        z-index: 10;
-        
     }
     #button-clear{
         background-color: rgb(255, 119, 0);
         border: 1px solid rgb(255, 119, 0);
         font-family: 'Staatliches', cursive;
         box-shadow: 2px 2px 5px rgb(92, 92, 92);
-        width: 110px;
-        font-size: 15px;
-        margin-top: 0px;
+        width: 100%;
+        font-size: 22px;
+        margin-top: 20px;
         height:50px;
-        z-index: 10;
-       
     }
     #yummly-tag{
         width: 200px;
@@ -591,7 +584,6 @@ tspan{
         color: rgb(62, 62, 62);
         background-color: white;
         height:50px;
-        z-index: 10;
     }
     #small-yum{
         width: 60px;
@@ -604,14 +596,13 @@ tspan{
     
     
     /*....Code for dropdown...*/
-     #menu-background{
+    #menu-background{
         background-color: rgb(170, 135, 92);
-        width: 100%;
-        margin-top: 50px;
-        margin-left:-10%;  
+        width: 40%;
+        margin-top: 70px;
+        margin-left:10%;  
         position: fixed;
         z-index: 5;
-        display: none;
     }
     .dropdown{
         width: 40%;
@@ -620,41 +611,35 @@ tspan{
         margin-left:1%;
         margin-top: 60px;
         z-index: 5;
-        display: none;
     }
     #dropdownMenuButton{
         padding-top: 10px;
-        font-family: 'Staatliches', cursive;
+        font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
+        width: 100%;
         color: rgb(255, 255, 255);
         background-color: rgb(170, 135, 92);
-        font-size: 15px;
-        display: inline;
-        display: none;
+        font-size: 26px;
     }
     .dropdown-menu {
         min-width: 120% !important;
         border: 1px solid black;
         font-size: 20px;
         border:1px solid black !important;
-        display: none;
      }
     .dropdown-menu ul{
         padding-left:20px !important;
-        display: none;
         
      }
     .dropdown-item{
         font-size: 20px;
-        display: none;
     }
     .multiSelect input[type="checkbox"]{
         size: 20px !important;
         margin: 0 10px 0 0;
         text-align: left !important;
-        display: none;
         
     }
     
@@ -666,7 +651,7 @@ tspan{
     .mutliSelect6 ul{
         list-style: none;
         font-size: 20px;
-        font-family: 'Staatliches', cursive;
+        font-family: Arial, Helvetica, sans-serif;
     }
     
     .mutliSelect input,
@@ -688,7 +673,7 @@ tspan{
     
     
     
-     */
+    
     /*......image scrollbox......*/
     #picture-col{
         background-color: transparent;
@@ -779,13 +764,14 @@ tspan{
         margin: 0 5px 10px 5px;
         border-radius: 0 0 10px 10px;
         box-shadow: 2px 2px 4px rgb(208, 208, 208);
-        font-family: 'Staatliches', cursive;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
         vertical-align: middle;
         text-align: center;
+        font-family: Courier, monospace;
         font-weight: bold;
         font-size: 13pt;
     }
@@ -843,16 +829,14 @@ tspan{
         font-family: Bradley Hand, cursive;
     }
     #picture-boxes-Recipe{
-        font-family: 'Staatliches', cursive;
+        font-family: Arial, Helvetica, sans-serif;
         color: rgb(110, 110, 110);
         font-size: 18px;
     }
     #tastes-chart{
         border: 6px solid black;
     }
-    tspan{
-    font-family: 'Staatliches', cursive;
-}
+    
     
     
     
@@ -867,19 +851,19 @@ tspan{
     #joke-header{
         color: #e7eeed;
         text-align: center;
-        font-family: 'Staatliches', cursive;
+        font-family: Bradley Hand, cursive;
         font-weight: bold;
     }
     #jk{
         color: #e7eeed;
         text-align: center;
-          font-family: 'Staatliches', cursive;
+        font-family: Bradley Hand, cursive;
         font-weight: bold;  
     }
     #t{
         color: #e7eeed;
         text-align: center;
-         font-family: 'Staatliches', cursive;
+        font-family: Bradley Hand, cursive;
         font-weight: bold;  
     }
     .joke-text{
@@ -889,7 +873,8 @@ tspan{
     #joke-card{
         border: 3px solid black;
         border-radius: 5px;
-        margin-left: 0%; 
+        margin-top: 10%;
+        margin-left: 8%; 
         min-height: 360px;
         width: 200px;
         float: left;
@@ -899,7 +884,6 @@ tspan{
         border-radius: 10px;
         position: absolute;
         z-index: 2;
-        margin-top: 70%;
     }
     #trivia{
         background-color: rgba(0,0,0,0.5);
@@ -907,7 +891,7 @@ tspan{
     #trivia-header{
         color: #e7eeed;
         text-align: center;
-        font-family: 'Staatliches', cursive;
+        font-family: Bradley Hand, cursive;
         font-weight: bold;
     }
     .trivia-text{
@@ -918,7 +902,8 @@ tspan{
     #trivia-card{
         border: 3px solid black;
         border-radius: 5px;
-        margin-left: 70%; 
+        margin-top: 7%;
+        margin-left: 1%; 
         min-height: 360px;
         width: 200px;
         float: left;
@@ -928,7 +913,6 @@ tspan{
         border-radius: 10px;
         position: absolute;
         z-index: 2;
-        margin-top: 5%;
     }
     
     
@@ -936,19 +920,19 @@ tspan{
     
     .footer {
         position: absolute;
-        width: 105%;
+        width: 100%;
         height: 60px;
-        line-height: 30px;
+        line-height: 60px;
         background: none;
         text-align: center;
         font-family: 'Staatliches', cursive;
-        font-size: 15px;
+        font-size: 26px;
         color: white;
         z-index: 2;
     
         color:rgb(255, 119, 0);
         z-index: 1;
-        margin-top: 100%;
+        margin-top: 40%;
     }
     /*.......Form......*/
     #newContact{
@@ -959,9 +943,10 @@ tspan{
         position: absolute;
         margin-top: 100%;
         width: 100%;
-        margin-top: 60%;
-        margin-left: 8%;
-        margin-right: 8%;
+        margin-top: 10%;
+        width: 70%;
+        margin-left: 20%;
+        margin-right: 20%;
     
     }
     #name{
@@ -1024,7 +1009,7 @@ tspan{
     .display-3{
         font-family: 'Staatliches', cursive;
         font-size: 40px;
-        line-height: 30px;
+        line-height: 108px; 
         text-shadow: 2px 2px 4px rgb(114, 114, 114); 
         color: white;
         width: 100%;
@@ -1047,7 +1032,7 @@ tspan{
         top: 0;
     }
     #searchFoodInput{
-          font-family: 'Staatliches', cursive;
+        font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         font-weight: bold;
         box-shadow: 2px 2px 5px rgb(84, 84, 84);
@@ -1107,7 +1092,6 @@ tspan{
         margin-left:5%;  
         position: fixed;
         z-index: 5;
-        display: none;
     }
     .dropdown{
         width: 95%;
@@ -1116,11 +1100,10 @@ tspan{
         margin-left:5%;
         margin-top: 8px;
         z-index: 5;
-        display: none;
     }
     #dropdownMenuButton{
         padding-top: 10px;
-       font-family: 'Staatliches', cursive;
+        font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
@@ -1128,29 +1111,24 @@ tspan{
         color: rgb(255, 255, 255);
         background-color: rgb(170, 135, 92);
         font-size: 17px;
-        display: none;
     }
     .dropdown-menu {
         min-width: 120% !important;
         border: 1px solid black;
         font-size: 20px;
         border:1px solid black !important;
-        display: none;
      }
     .dropdown-menu ul{
-        padding-left:10px !important;
-        display: none;
+        padding-left:20px !important;
         
      }
     .dropdown-item{
         font-size: 20px;
-        display: none;
     }
     .multiSelect input[type="checkbox"]{
         size: 20px !important;
         margin: 0 10px 0 0;
         text-align: left !important;
-        display: none;
         
     }
     
@@ -1162,7 +1140,7 @@ tspan{
     .mutliSelect6 ul{
         list-style: none;
         font-size: 20px;
-         font-family: 'Staatliches', cursive;
+        font-family: Arial, Helvetica, sans-serif;
     }
     
     .mutliSelect input,
@@ -1275,13 +1253,14 @@ tspan{
         margin: 0 5px 10px 5px;
         border-radius: 0 0 10px 10px;
         box-shadow: 2px 2px 4px rgb(208, 208, 208);
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
         vertical-align: middle;
         text-align: center;
-         font-family: 'Staatliches', cursive;
+        font-family: Courier, monospace;
         font-weight: bold;
         font-size: 13pt;
     }
@@ -1336,19 +1315,17 @@ tspan{
         box-align: top;
         min-height: 100px !important;
         width: 100%;
-        font-family: 'Staatliches', cursive;
+        font-family: Bradley Hand, cursive;
     }
     #picture-boxes-Recipe{
-        font-family: 'Staatliches', cursive;
+        font-family: Arial, Helvetica, sans-serif;
         color: rgb(110, 110, 110);
         font-size: 18px;
     }
     #tastes-chart{
         border: 6px solid black;
     }
-        tspan{
-    font-family: 'Staatliches', cursive;
-}
+    
     
     
     
@@ -1363,19 +1340,19 @@ tspan{
     #joke-header{
         color: #e7eeed;
         text-align: center;
-        font-family: 'Staatliches', cursive;
+        font-family: Bradley Hand, cursive;
         font-weight: bold;
     }
     #jk{
         color: #e7eeed;
         text-align: center;
-        font-family: 'Staatliches', cursive;
+        font-family: Bradley Hand, cursive;
         font-weight: bold;  
     }
     #t{
         color: #e7eeed;
         text-align: center;
-        font-family: 'Staatliches', cursive;
+        font-family: Bradley Hand, cursive;
         font-weight: bold;  
     }
     .joke-text{
@@ -1385,8 +1362,8 @@ tspan{
     #joke-card{
         border: 3px solid black;
         border-radius: 5px;
-        margin-top: 110%;
-        margin-left: -3%; 
+        margin-top: 10%;
+        margin-left: 8%; 
         min-height: 360px;
         width: 200px;
         float: left;
@@ -1403,7 +1380,7 @@ tspan{
     #trivia-header{
         color: #e7eeed;
         text-align: center;
-        font-family: 'Staatliches', cursive;
+        font-family: Bradley Hand, cursive;
         font-weight: bold;
     }
     .trivia-text{
@@ -1414,8 +1391,8 @@ tspan{
     #trivia-card{
         border: 3px solid black;
         border-radius: 5px;
-        margin-top: 5.5%;
-        margin-left: 48%; 
+        margin-top: 7%;
+        margin-left: 1%; 
         min-height: 360px;
         width: 200px;
         float: left;
@@ -1444,19 +1421,21 @@ tspan{
     
         color:rgb(255, 119, 0);
         z-index: 1;
-        margin-top: 120%;
+        margin-top: 40%;
     }
     /*.......Form......*/
     #newContact{
         font-family: 'Staatliches', cursive;
-        font-size: 10px;
+        font-size: 26px;
         color:rgb(255, 119, 0);
         z-index: 1;
         position: absolute;
-        margin-top: 90%;
-        width: 90%;
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-top: 100%;
+        width: 100%;
+        margin-top: 10%;
+        width: 70%;
+        margin-left: 20%;
+        margin-right: 20%;
     
     }
     #name{
@@ -1491,13 +1470,17 @@ tspan{
     }
     }
     
-
+    
+    
+    
+    
+    
+    
     /*...Chart....*/
     #container {
         position: absolute;
         z-index: 10;
     }
-
 
 
 
@@ -1560,4 +1543,3 @@ position:absolute;
    margin-top:200px;
 
 }
-

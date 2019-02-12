@@ -19,14 +19,6 @@ $( document ).ready(function() {
         document.getElementById("recipe-button").click();
         e.preventDefault(); 
     }, false);
-
-
-    document.getElementById('newContact').addEventListener('submit', function(e) {
-        document.getElementById("submitContact").click();
-        e.preventDefault(); 
-    }, false);
-
-
     yummlyRecipe();
     ourJoke();
     ourTrivia()
@@ -34,20 +26,20 @@ $( document ).ready(function() {
 $('#recipe-button').on('click', function(){
     mainCourse=$("#searchFoodInput").val(); console.log("mainCourse",mainCourse )
     Cuisine=$(".multiSel1").text();  
-    Cuisine= Cuisine.substring(0, Cuisine.length - 1); 
+    ////Cuisine= Cuisine.substring(0, Cuisine.length - 1); 
     console.log("cuisine",Cuisine )
     //chooseDiet=$(".multiSel2").text();  
     AllowedCourse=$(".multiSel3").text(); 
-    AllowedCourse= AllowedCourse.substring(0, AllowedCourse.length - 1); 
+  //  AllowedCourse= AllowedCourse.substring(0, AllowedCourse.length - 1); 
     console.log("AllowedCourse",AllowedCourse )
     Allergy=$(".multiSel4").text();  
-    Allergy= Allergy.substring(0, Allergy.length - 1);
+    //Allergy= Allergy.substring(0, Allergy.length - 1);
      console.log("allergy",Allergy )
     excludeIngredient=$(".multiSel5").text(); 
   //  excludeIngredient= excludeIngredient.substring(0, excludeIngredient.length - 1);
     console.log("excludeIngredient",excludeIngredient );
     chooseDiet=$(".multiSel6").text(); 
-    chooseDiet= chooseDiet.substring(0, chooseDiet.length - 1);
+   // chooseDiet= chooseDiet.substring(0, chooseDiet.length - 1);
     console.log("chooseDiet",chooseDiet )                              
       $("#trivia-header").html("");
       $("#joke-header").html("");   
