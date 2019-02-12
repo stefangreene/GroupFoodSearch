@@ -108,7 +108,7 @@ function yummlyRecipe(callData){
 
 $.ajax({
     type: 'GET',
-    url: 'http://api.yummly.com/v1/api/recipes?_app_id='+appID+'&_app_key='+apiKey+'&q='+mainCourse+AllowedCourse +'&excludeIngredient[]='+excludeIngredient+chooseDiet+Allergy+Cuisine+'&maxResult=20&start=10&requirePictures=true',
+    url: 'http://api.yummly.com/v1/api/recipes?_app_id='+appID+'&_app_key='+apiKey+'&q='+mainCourse+AllowedCourse +'&excludeIngredient[]='+excludeIngredient+chooseDiet+Allergy+Cuisine+'&maxResult=40&start=10&requirePictures=true',
 
 
     }).done(function (results) {
@@ -353,7 +353,8 @@ function yummlyRecipe2(RecipeIdPar){
                           }
                
 
-                         }        drawchart(recipeTitleName);  
+                         }        
+                         drawchart(recipeTitleName);  
                          FlavorChart(BitterAmount, MeatyAmount, PiquantAmount, SaltyAmount, SourAmount,SweetAmount);    
                     
                          
@@ -409,7 +410,7 @@ Highcharts.chart('container', {
     },
     yAxis: {
         title: {
-            text: 'Nutrition content'
+            text: 'Nutrition content (grams)'
         }
 
     },
@@ -433,7 +434,7 @@ Highcharts.chart('container', {
 
     "series": [
         {
-            "name": "Nutrition Estimate",
+            "name": "Nutrition Estimate (grames)",
             "colorByPoint": true,
             "data": [
                 {
