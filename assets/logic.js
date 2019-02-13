@@ -66,6 +66,7 @@ var RecipeIdPar=$(this).attr('recipieid');
 yummlyRecipe2(RecipeIdPar);
 
 
+
 });
 
 function ourJoke(){
