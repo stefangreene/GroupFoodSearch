@@ -57,6 +57,12 @@ $(".multiSel2").html('');
 $(".multiSel3").html(''); 
 $(".multiSel4").html(''); 
 $(".multiSel5").html(''); 
+$(".multiSel6").html(''); 
+});
+
+$("#submitContact").click(function() {
+alert("Your contact information is sent, we will get back to you soon!!")
+
 });
 
 
@@ -64,6 +70,7 @@ $("body").on("click", ".picture-boxes", function(){
 $('.IngridentShow').show();
 var RecipeIdPar=$(this).attr('recipieid');
 yummlyRecipe2(RecipeIdPar);
+
 
 
 });
@@ -108,7 +115,7 @@ function yummlyRecipe(callData){
 
 $.ajax({
     type: 'GET',
-    url: 'http://api.yummly.com/v1/api/recipes?_app_id='+appID+'&_app_key='+apiKey+'&q='+mainCourse+AllowedCourse +'&excludeIngredient[]='+excludeIngredient+chooseDiet+Allergy+Cuisine+'&maxResult=40&start=10&requirePictures=true',
+    url: 'http://api.yummly.com/v1/api/recipes?_app_id='+appID+'&_app_key='+apiKey+'&q='+mainCourse+AllowedCourse +'&excludeIngredient[]='+excludeIngredient+chooseDiet+Allergy+Cuisine+'&maxResult=20&start=10&requirePictures=true',
 
 
     }).done(function (results) {
@@ -353,8 +360,7 @@ function yummlyRecipe2(RecipeIdPar){
                           }
                
 
-                         }        
-                         drawchart(recipeTitleName);  
+                         }        drawchart(recipeTitleName);  
                          FlavorChart(BitterAmount, MeatyAmount, PiquantAmount, SaltyAmount, SourAmount,SweetAmount);    
                     
                          
@@ -410,7 +416,7 @@ Highcharts.chart('container', {
     },
     yAxis: {
         title: {
-            text: 'Nutrition content (grams)'
+            text: 'Nutrition content'
         }
 
     },
@@ -434,7 +440,7 @@ Highcharts.chart('container', {
 
     "series": [
         {
-            "name": "Nutrition Estimate (grames)",
+            "name": "Nutrition Estimate",
             "colorByPoint": true,
             "data": [
                 {
