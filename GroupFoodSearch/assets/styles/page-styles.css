@@ -1,5 +1,15 @@
-
+body{
+    
+    background-image: url("../../images/background_image.jpg")
+}
 @media (min-width:1401px) and (max-width: 2000px) {
+    div#FooterDiv{
+        text-align: center;
+        width:100%;
+        margin-top:200px;
+        background-color: grey !important;
+        
+        }
 
 /*background image*/
 #backgrounIMG-box{
@@ -460,12 +470,9 @@ p.title-search{
 #newContact{
     font-family: 'Staatliches', cursive;
     font-size: 26px;
-    color:rgb(255, 119, 0);
-    z-index: 1;
-    position: absolute;
-    margin-top: 100%;
+    color:rgb(255, 119, 0);       
     width: 100%;
-    margin-top: 10%;
+    margin-top: 200px;
     width: 70%;
     margin-left: 20%;
     margin-right: 20%;
@@ -474,7 +481,7 @@ p.title-search{
 #name{
     width: 35%; 
     float: left; 
-    background: none; 
+    
     padding: 1.75em 2em;  
     border-radius: .25em; 
     box-shadow: none;
@@ -484,7 +491,7 @@ p.title-search{
 #email{
     width: 35%; 
     float: left; 
-    background: none; 
+    
     padding: 1.75em 2em; margin: 0;
     border-radius: .25em;
     box-shadow: none; 
@@ -494,7 +501,7 @@ p.title-search{
 #message{
     width: 70%; 
     float: left; 
-    background: none; 
+    
     padding: 1.75em 2em; 
     margin: 0; 
     border-radius: .25em; 
@@ -505,7 +512,13 @@ p.title-search{
 
 
 @media (min-width:701px) and (max-width: 1400px) {
-
+    div#FooterDiv{
+        text-align: center;
+        width:100%;
+        margin-top:200px;
+        background-color: grey !important;
+        
+        }
     /*background image*/
     #backgrounIMG-box{
         position: absolute;
@@ -960,8 +973,6 @@ p.title-search{
         font-family: 'Staatliches', cursive;
         font-size: 26px;
         color:rgb(255, 119, 0);
-        z-index: 1;
-        position: absolute;
         margin-top: 100%;
         width: 100%;
         margin-top:24%;
@@ -973,8 +984,7 @@ p.title-search{
     #name{
         width: 35%; 
         float: left; 
-        background: none; 
-        padding: 1.75em 2em;  
+         padding: 1.75em 2em;  
         border-radius: .25em; 
         box-shadow: none;
         border: none;
@@ -983,7 +993,6 @@ p.title-search{
     #email{
         width: 35%; 
         float: left; 
-        background: none; 
         padding: 1.75em 2em; margin: 0;
         border-radius: .25em;
         box-shadow: none; 
@@ -993,7 +1002,6 @@ p.title-search{
     #message{
         width: 70%; 
         float: left; 
-        background: none; 
         padding: 1.75em 2em; 
         margin: 0; 
         border-radius: .25em; 
@@ -1004,6 +1012,14 @@ p.title-search{
 
 
 @media (min-width:400px) and (max-width: 700px) {
+    div#FooterDiv{
+        text-align: center;
+        width:100%;
+        margin-top:200px;
+        background-color: grey !important;
+        
+        }
+    
 
     /*background image*/
     #backgrounIMG-box{
@@ -1469,7 +1485,7 @@ p.title-search{
     #name{
         width: 35%; 
         float: left; 
-        background: none; 
+        
         padding: 1.75em 2em;  
         border-radius: .25em; 
         box-shadow: none;
@@ -1479,7 +1495,7 @@ p.title-search{
     #email{
         width: 35%; 
         float: left; 
-        background: none; 
+        
         padding: 1.75em 2em; margin: 0;
         border-radius: .25em;
         box-shadow: none; 
@@ -1489,7 +1505,7 @@ p.title-search{
     #message{
         width: 70%; 
         float: left; 
-        background: none; 
+        
         padding: 1.75em 2em; 
         margin: 0; 
         border-radius: .25em; 
@@ -1503,18 +1519,25 @@ p.title-search{
     
     /*...Chart....*/
     #container {
-        position: absolute;
-        z-index: 10;
         max-width: 650px !important;
         overflow: scroll !important;
         margin-top: 25%;
-        z-index: 2;
+        padding-left:25%;
+       
     }
 
 
-
- /* status update */
- .cns-status-box {
+    div#FooterDiv{
+        text-align: center;
+        width:100%;
+        margin-top:200px;
+        background-color: grey !important;
+        
+        }
+ 
+}
+/* status update */
+.cns-status-box {
     margin: 10px;
     border: 1px solid #c3c3c3;
     padding: 10px 30px 30px 30px;
@@ -1565,9 +1588,26 @@ position:absolute;
    width:100%;
    margin-top:200px;
    margin-bottom:200px;
+   margin-left: 20% !important;
    
 
 }
+<<<<<<< HEAD:GroupFoodSearch/assets/styles/page-styles.css
+#newContact{
+    font-family: 'Staatliches', cursive;
+    font-size: 26px;
+    color:rgb(255, 119, 0);   
+     margin-top: 400px;
+    width: 100%;
+    padding-top: 200px;
+    width: 70%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: grey;
+
+}
+ 
+=======
 #FooterDiv{
   z-index:10;
    text-align: center;
@@ -1576,3 +1616,4 @@ position:absolute;
 
 }
 }
+>>>>>>> 14027738f7aa2d0f130471974aee9aefb7db1daf:assets/styles/page-styles.css
