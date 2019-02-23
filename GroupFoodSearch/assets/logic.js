@@ -115,7 +115,7 @@ function yummlyRecipe(callData){
 
 $.ajax({
     type: 'GET',
-    url: 'http://api.yummly.com/v1/api/recipes?_app_id='+appID+'&_app_key='+apiKey+'&q='+mainCourse+AllowedCourse +'&excludeIngredient[]='+excludeIngredient+chooseDiet+Allergy+Cuisine+'&maxResult=20&start=10&requirePictures=true',
+    url: 'https://api.yummly.com/v1/api/recipes?_app_id='+appID+'&_app_key='+apiKey+'&q='+mainCourse+AllowedCourse +'&excludeIngredient[]='+excludeIngredient+chooseDiet+Allergy+Cuisine+'&maxResult=20&start=10&requirePictures=true',
 
 
     }).done(function (results) {
