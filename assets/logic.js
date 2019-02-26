@@ -219,7 +219,7 @@ $.ajax({
 function yummlyRecipe2(RecipeIdPar){
                 $.ajax({
                     type: 'GET',
-                    url: 'http://api.yummly.com/v1/api/recipe/'+RecipeIdPar+'?_app_id=ad9dde64&_app_key=dd23675598c15c270213370a7b95f878&maxResult=30&start=10',
+                    url: 'https://api.yummly.com/v1/api/recipe/'+RecipeIdPar+'?_app_id=ad9dde64&_app_key=dd23675598c15c270213370a7b95f878&maxResult=30&start=10',
                     
                     }).done(function (resultRecipe) {
                         console.log(resultRecipe);  
